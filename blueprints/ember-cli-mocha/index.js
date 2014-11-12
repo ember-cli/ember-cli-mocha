@@ -1,3 +1,5 @@
+var EOL = require('os').EOL;
+
 module.exports = {
   name: 'ember-cli-mocha',
 
@@ -9,6 +11,17 @@ module.exports = {
 
   afterInstall: function() {
     var addonContext = this;
+
+    this.insertIntoFile('tests/.jshintrc',
+      '    "mocha",' + EOL +
+      '    "chai",' + EOL +
+      '    "describe",' + EOL +
+      '    "it",' + EOL +
+      '    "before",' + EOL +
+      '    "beforeEach",' + EOL +
+      '    "after",' + EOL +
+      '    "afterEach",',
+      {after:'  "predef": ['+EOL});
 
     return this.addBowerPackageToProject('mocha', '~1.17.0')
       .then(function() {
