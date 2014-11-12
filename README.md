@@ -1,5 +1,7 @@
 # ember-cli-mocha
 
+Mocha / Chai testing for your Ember CLI apps.
+
 ## Installation
 
 Remove QUnit from your ember-cli app:
@@ -21,6 +23,15 @@ ember generate ember-cli-mocha
 Important: If you receive the conflict message "Unable to find suitable version
 for ember-cli-test-loader" during the last step, choose the "test-agnostic"
 branch. This dependency issue should be resolved soon.
+
+## Usage
+
+ember-cli-mocha overrides all of ember-cli's testing blueprints. Simply generate
+models, controllers, components, etc. in order to generate the corresponding Mocha
+/ Chai tests.
+
+Tests rely on [ember-mocha](https://github.com/switchfly/ember-mocha) modules
+and helpers. Please refer to that project to understand detailed usage.
 
 ## Copyright and License
 
