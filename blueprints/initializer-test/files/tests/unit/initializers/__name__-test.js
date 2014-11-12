@@ -1,3 +1,4 @@
+/* jshint expr:true */
 import Ember from 'ember';
 import { initialize } from '<%= dasherizedPackageName %>/initializers/<%= dasherizedModuleName %>';
 

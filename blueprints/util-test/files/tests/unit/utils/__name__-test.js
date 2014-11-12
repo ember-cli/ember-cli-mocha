@@ -1,3 +1,4 @@
+/* jshint expr:true */
 import <%= camelizedModuleName %> from '<%= dasherizedPackageName %>/utils/<%= dasherizedModuleName %>';
 
 describe('<%= camelizedModuleName %>', function() {

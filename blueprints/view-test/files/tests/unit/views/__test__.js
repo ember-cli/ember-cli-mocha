@@ -1,3 +1,4 @@
+/* jshint expr:true */
 import {
   describeModule,
   it
