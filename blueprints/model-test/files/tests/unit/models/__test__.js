@@ -3,8 +3,6 @@ import {
   it
 } from 'ember-mocha';
 
-var expect = chai.expect;
-
 describeModel(
   '<%= dasherizedModuleName %>',
   '<%= classifiedModuleName %>',

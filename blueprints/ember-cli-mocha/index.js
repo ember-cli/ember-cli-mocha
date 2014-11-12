@@ -15,6 +15,7 @@ module.exports = {
     this.insertIntoFile('tests/.jshintrc',
       '    "mocha",' + EOL +
       '    "chai",' + EOL +
+      '    "expect",' + EOL +
       '    "describe",' + EOL +
       '    "it",' + EOL +
       '    "before",' + EOL +

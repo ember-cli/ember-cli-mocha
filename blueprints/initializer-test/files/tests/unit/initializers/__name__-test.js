@@ -1,8 +1,6 @@
 import Ember from 'ember';
 import { initialize } from '<%= dasherizedPackageName %>/initializers/<%= dasherizedModuleName %>';
 
-var expect = chai.expect;
-
 describe('<%= classifiedModuleName %>Initializer', function() {
   var container, application;
 

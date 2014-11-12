@@ -11,6 +11,10 @@ $(document).ready(function(){
   $('#qunit').attr('id', 'mocha');
   $('#qunit-fixture').attr('id', 'mocha-fixture');
 
+  // Declare `expect` as a global here instead of as a var in individual tests.
+  // This avoids jshint warnings re: `Redefinition of 'expect'`.
+  window.expect = chai.expect;
+
   require('ember-cli/test-loader')['default'].load();
 
   mocha.run();

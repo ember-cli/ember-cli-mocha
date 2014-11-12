@@ -1,8 +1,6 @@
 import Ember from 'ember';
 import <%= classifiedModuleName %>Mixin from '<%= dasherizedPackageName %>/mixins/<%= dasherizedModuleName %>';
 
-var expect = chai.expect;
-
 describe('<%= classifiedModuleName %>Mixin', function() {
   // Replace this with your real tests.
   it('works', function() {

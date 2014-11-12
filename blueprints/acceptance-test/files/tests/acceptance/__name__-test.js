@@ -1,7 +1,6 @@
 import Ember from 'ember';
 import startApp from '../helpers/start-app';
 
-var expect = chai.expect;
 var App;
 
 describe('Acceptance: <%= classifiedModuleName %>', function() {
