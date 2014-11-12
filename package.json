@@ -1,0 +1,32 @@
+{
+  "name": "ember-cli-mocha",
+  "version": "0.1.0",
+  "description": "Mocha and Chai tests for ember-cli applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "ember-addon": {
+    "main": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/switchfly/ember-cli-mocha.git"
+  },
+  "keywords": [
+    "ember-addon",
+    "ember",
+    "mocha",
+    "chai"
+  ],
+  "authors": [
+    "Dan Gebhardt"
+  ],
+  "license": "Apache Version 2.0",
+  "bugs": {
+    "url": "https://github.com/switchfly/ember-cli-mocha/issues"
+  },
+  "homepage": "https://github.com/switchfly/ember-cli-mocha",
+  "dependencies": { },
+  "bundledDependencies": [ ]
+}
