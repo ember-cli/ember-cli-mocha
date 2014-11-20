@@ -32,7 +32,7 @@ module.exports = {
         return addonContext.addBowerPackageToProject('ember-mocha-adapter', '0.2.1');
       })
       .then(function() {
-        return addonContext.addBowerPackageToProject('ember-mocha', '~0.1.0');
+        return addonContext.addBowerPackageToProject('ember-mocha', '~0.1.1');
       })
       .then(function() {
         return addonContext.addBowerPackageToProject('dgeb/ember-cli-test-loader', 'test-agnostic');
