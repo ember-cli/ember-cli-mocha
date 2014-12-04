@@ -1,6 +1,7 @@
 'use strict';
 
 var path = require('path');
+var fs = require('fs');
 
 module.exports = {
   name: 'Ember CLI Mocha',
@@ -46,5 +47,15 @@ module.exports = {
         });
       });
     }
+  },
+
+    contentFor: function(type) {
+    if (type === 'test-body') {
+      return this._readTemplate('test-body');
+    }
+  },
+
+  _readTemplate: function(name) {
+    return fs.readFileSync(path.join(__dirname, 'templates', name + '.html'));
   }
 };
