@@ -49,7 +49,7 @@ module.exports = {
     }
   },
 
-    contentFor: function(type) {
+  contentFor: function(type) {
     if (type === 'test-body') {
       return this._readTemplate('test-body');
     }
