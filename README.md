@@ -20,12 +20,9 @@ npm install ember-cli-mocha --save-dev
 ember generate ember-cli-mocha
 ```
 
-### Resolving Conflicts
-If you receive bower conflicts for `mocha` and `chai`, be sure to choose the lower version. You should persist this choice by prepending your chosen version with a `!` (i.e. `!1`), which will add a resolution to your `bower.json` file.
-
-Important: If you receive the conflict message "Unable to find suitable version
-for ember-cli-test-loader" during the last step, choose the "test-agnostic"
-branch. This dependency issue should be resolved soon.
+**Important**: If you receive the conflict message "Unable to find suitable
+version for ember-cli-test-loader" during the last step, choose the
+"test-agnostic" branch. This dependency issue should be resolved soon.
 
 ## Usage
 

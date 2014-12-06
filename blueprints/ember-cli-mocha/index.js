@@ -24,16 +24,7 @@ module.exports = {
       '    "afterEach",',
       {after:'  "predef": ['+EOL});
 
-    return this.addBowerPackageToProject('mocha', '~1.17.0')
-      .then(function() {
-        return addonContext.addBowerPackageToProject('chai', '~1.9.1');
-      })
-      .then(function() {
-        return addonContext.addBowerPackageToProject('ember-mocha-adapter', '0.2.1');
-      })
-      .then(function() {
-        return addonContext.addBowerPackageToProject('ember-mocha', '~0.1.1');
-      })
+    return this.addBowerPackageToProject('ember-mocha', '~0.2.0')
       .then(function() {
         return addonContext.addBowerPackageToProject('dgeb/ember-cli-test-loader', 'test-agnostic');
       })

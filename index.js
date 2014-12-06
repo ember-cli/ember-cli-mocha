@@ -18,6 +18,7 @@ module.exports = {
         app.bowerDirectory + '/mocha/mocha.js',
         app.bowerDirectory + '/mocha/mocha.css',
         app.bowerDirectory + '/chai/chai.js',
+        app.bowerDirectory + '/ember-mocha/mocha-setup.js',
         app.bowerDirectory + '/ember-mocha-adapter/adapter.js'
       ];
 
