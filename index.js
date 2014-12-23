@@ -6,6 +6,24 @@ var fs = require('fs');
 module.exports = {
   name: 'Ember CLI Mocha',
 
+  overrideTestCommandFilter: function() {
+    var TestCommand = this.project.require('ember-cli/lib/commands/test');
+
+    TestCommand.prototype.buildTestPageQueryString = function(options) {
+      var queryString = '';
+
+      if (options.filter) {
+        queryString = "?grep=" + options.filter;
+      }
+
+      return queryString;
+    };
+  },
+
+  init: function() {
+    this.overrideTestCommandFilter();
+  },
+
   blueprintsPath: function() {
     return path.join(__dirname, 'blueprints');
   },
