@@ -9,7 +9,7 @@ describeModel(
   '<%= classifiedModuleName %>',
   {
     // Specify the other units that are required for this test.
-    <%= needs %>
+    <%= typeof needs !== 'undefined' ? needs : '' %>
   },
   function() {
     // Replace this with your real tests.
