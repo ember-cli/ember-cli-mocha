@@ -2,6 +2,7 @@
 
 var path = require('path');
 var fs = require('fs');
+var jshintTrees = require('broccoli-jshint');
 
 module.exports = {
   name: 'Ember CLI Mocha',
@@ -66,6 +67,7 @@ module.exports = {
         });
       });
     }
+    this.jshintrc = app.options.jshintrc;
   },
 
   contentFor: function(type) {
@@ -76,5 +78,27 @@ module.exports = {
 
   _readTemplate: function(name) {
     return fs.readFileSync(path.join(__dirname, 'templates', name + '.html'));
+  },
+
+  lintTree: function(type, tree) {
+    return jshintTrees(tree, {
+      jshintrcPath: this.jshintrc.tests,
+      description: 'JSHint ' + type + '- Mocha',
+      testGenerator: testGenerator
+    });
   }
+
 };
+
+function testGenerator(relativePath, passed, errors) {
+  if (errors) {
+    errors = "\\n" + this.escapeErrorString(errors);
+  } else {
+    errors = "";
+  }
+
+  return "describe('JSHint - " + relativePath + "', function(){\n" +
+    "it('should pass jshint', function() { \n" +
+    "  expect(" + !!passed + ", '" + relativePath + " should pass jshint." + errors + "').to.be.ok(); \n" +
+    "})});\n";
+}

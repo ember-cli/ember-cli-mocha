@@ -27,6 +27,8 @@
     "url": "https://github.com/switchfly/ember-cli-mocha/issues"
   },
   "homepage": "https://github.com/switchfly/ember-cli-mocha",
-  "dependencies": { },
+  "dependencies": {
+    "broccoli-jshint": "0.5.3"
+  },
   "bundledDependencies": [ ]
 }

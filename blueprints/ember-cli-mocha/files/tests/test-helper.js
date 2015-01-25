@@ -15,7 +15,11 @@ $(document).ready(function(){
   // This avoids jshint warnings re: `Redefinition of 'expect'`.
   window.expect = chai.expect;
 
-  require('ember-cli/test-loader')['default'].load();
+  var TestLoader = require('ember-cli/test-loader')['default'];
+  TestLoader.prototype.shouldLoadModule = function(moduleName) {
+    return moduleName.match(/[-_]test$/) || moduleName.match(/\.jshint$/);
+  };
+  TestLoader.load();
 
   mocha.run();
 });
