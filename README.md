@@ -20,10 +20,6 @@ npm install ember-cli-mocha --save-dev
 ember generate ember-cli-mocha
 ```
 
-**Important**: If you receive the conflict message "Unable to find suitable
-version for ember-cli-test-loader" during the last step, choose the
-"test-agnostic" branch. This dependency issue should be resolved soon.
-
 ## Usage
 
 ember-cli-mocha overrides all of ember-cli's testing blueprints. Simply generate

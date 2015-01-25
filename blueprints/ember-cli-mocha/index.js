@@ -26,7 +26,7 @@ module.exports = {
 
     return this.addBowerPackageToProject('ember-mocha', '~0.2.0')
       .then(function() {
-        return addonContext.addBowerPackageToProject('dgeb/ember-cli-test-loader', 'test-agnostic');
+        return addonContext.addBowerPackageToProject('ember-cli/ember-cli-test-loader', '0.1.0');
       })
       .then(function() {
         return addonContext.addBowerPackageToProject('stefanpenner/ember-cli-shims', '0.0.3');
