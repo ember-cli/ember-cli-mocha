@@ -24,7 +24,7 @@ module.exports = {
       '    "afterEach",',
       {after:'  "predef": ['+EOL});
 
-    return this.addBowerPackageToProject('ember-mocha', '~0.2.0')
+    return this.addBowerPackageToProject('ember-mocha', '~0.2.2')
       .then(function() {
         return addonContext.addBowerPackageToProject('ember-cli/ember-cli-test-loader', '0.1.0');
       })
