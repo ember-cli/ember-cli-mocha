@@ -82,7 +82,7 @@ module.exports = {
 
   lintTree: function(type, tree) {
     return jshintTrees(tree, {
-      jshintrcPath: this.jshintrc.tests,
+      jshintrcPath: this.jshintrc[type],
       description: 'JSHint ' + type + '- Mocha',
       testGenerator: testGenerator
     });
