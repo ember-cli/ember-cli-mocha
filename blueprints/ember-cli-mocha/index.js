@@ -29,7 +29,7 @@ module.exports = {
         return addonContext.addBowerPackageToProject('ember-cli/ember-cli-test-loader', '0.1.0');
       })
       .then(function() {
-        return addonContext.addBowerPackageToProject('stefanpenner/ember-cli-shims', '0.0.3');
+        return addonContext.addBowerPackageToProject('ember-cli/ember-cli-shims', '0.0.3');
       });
   }
 };
