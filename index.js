@@ -38,8 +38,14 @@ module.exports = {
         app.bowerDirectory + '/mocha/mocha.css',
         app.bowerDirectory + '/chai/chai.js',
         app.bowerDirectory + '/ember-mocha/mocha-setup.js',
-        app.bowerDirectory + '/ember-mocha-adapter/adapter.js'
+        app.bowerDirectory + '/ember-mocha-adapter/adapter.js',
+        'vendor/ember-cli-mocha/test-loader.js'
       ];
+
+      var addonOptions = app.options['ember-cli-mocha'];
+      if (addonOptions && !addonOptions.disableContainerStyles) {
+        fileAssets.push('vendor/ember-cli-mocha/test-container-styles.css');
+      }
 
       app.import(app.bowerDirectory + '/ember-mocha/ember-mocha.amd.js', {
          type: 'test',
