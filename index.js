@@ -14,7 +14,7 @@ module.exports = {
       var queryString = '';
 
       if (options.filter) {
-        queryString = "?grep=" + options.filter;
+        queryString = "grep=" + options.filter;
       }
 
       return queryString;
