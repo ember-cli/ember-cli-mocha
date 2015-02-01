@@ -12,18 +12,6 @@ module.exports = {
   afterInstall: function() {
     var addonContext = this;
 
-    this.insertIntoFile('tests/.jshintrc',
-      '    "mocha",' + EOL +
-      '    "chai",' + EOL +
-      '    "expect",' + EOL +
-      '    "describe",' + EOL +
-      '    "it",' + EOL +
-      '    "before",' + EOL +
-      '    "beforeEach",' + EOL +
-      '    "after",' + EOL +
-      '    "afterEach",',
-      {after:'  "predef": ['+EOL});
-
     return this.addBowerPackageToProject('ember-mocha', '~0.4.0')
       .then(function() {
         return addonContext.addBowerPackageToProject('ember-cli/ember-cli-test-loader', '0.1.0');
