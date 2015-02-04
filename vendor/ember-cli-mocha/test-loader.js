@@ -9,7 +9,10 @@ jQuery(document).ready(function() {
   TestLoader.prototype.shouldLoadModule = function(moduleName) {
     return moduleName.match(/[-_]test$/) || moduleName.match(/\.jshint$/);
   };
-  TestLoader.load();
 
-  mocha.run();
+  setTimeout(function() {
+    TestLoader.load();
+
+    mocha.run();
+  }, 250);
 });
