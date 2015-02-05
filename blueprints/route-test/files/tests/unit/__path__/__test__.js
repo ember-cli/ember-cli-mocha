@@ -1,4 +1,3 @@
-/* jshint expr:true */
 import {
   describeModule,
   it
@@ -14,7 +13,7 @@ describeModule(
   function() {
     it('exists', function() {
       var route = this.subject();
-      expect(route).to.be.ok;
+      expect(route).to.be.ok();
     });
   }
 );
