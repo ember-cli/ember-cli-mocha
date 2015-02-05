@@ -1,4 +1,3 @@
-/* jshint expr:true */
 import {
   describeModule,
   it
@@ -15,7 +14,7 @@ describeModule(
     // Replace this with your real tests.
     it('exists', function() {
       var adapter = this.subject();
-      expect(adapter).to.be.ok;
+      expect(adapter).to.be.ok();
     });
   }
 );

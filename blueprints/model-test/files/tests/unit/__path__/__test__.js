@@ -1,4 +1,3 @@
-/* jshint expr:true */
 import {
   describeModel,
   it
@@ -16,7 +15,7 @@ describeModel(
     it('exists', function() {
       var model = this.subject();
       // var store = this.store();
-      expect(model).to.be.ok;
+      expect(model).to.be.ok();
     });
   }
 );

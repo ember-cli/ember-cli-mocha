@@ -1,4 +1,3 @@
-/* jshint expr:true */
 import Ember from 'ember';
 import <%= classifiedModuleName %>Mixin from '<%= dasherizedPackageName %>/mixins/<%= dasherizedModuleName %>';
 
@@ -7,6 +6,6 @@ describe('<%= classifiedModuleName %>Mixin', function() {
   it('works', function() {
     var <%= classifiedModuleName %>Object = Ember.Object.extend(<%= classifiedModuleName %>Mixin);
     var subject = <%= classifiedModuleName %>Object.create();
-    expect(subject).to.be.ok;
+    expect(subject).to.be.ok();
   });
 });
