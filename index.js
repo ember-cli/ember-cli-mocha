@@ -105,6 +105,6 @@ function testGenerator(relativePath, passed, errors) {
 
   return "describe('JSHint - " + relativePath + "', function(){\n" +
     "it('should pass jshint', function() { \n" +
-    "  expect(" + !!passed + ", '" + relativePath + " should pass jshint." + errors + "').to.be.ok(); \n" +
+    "  expect(" + !!passed + ", '" + relativePath + " should pass jshint." + errors + "').to.be.ok; \n" +
     "})});\n";
 }
