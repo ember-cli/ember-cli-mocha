@@ -18,7 +18,12 @@ jQuery(document).ready(function() {
     });
   };
 
-  TestLoader.load();
+  // Attempt to mitigate sourcemap issues in Chrome
+  // See: https://github.com/ember-cli/ember-cli/issues/3098
+  //      https://github.com/ember-cli/ember-cli-qunit/pull/39
+  setTimeout(function() {
+    TestLoader.load();
 
-  mocha.run();
+    mocha.run();
+  }, 250);
 });
