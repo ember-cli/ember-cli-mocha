@@ -9,6 +9,15 @@ jQuery(document).ready(function() {
   TestLoader.prototype.shouldLoadModule = function(moduleName) {
     return moduleName.match(/[-_]test$/) || moduleName.match(/\.jshint$/);
   };
+
+  TestLoader.prototype.moduleLoadFailure = function(moduleName, error) {
+    describe('TestLoader Failures', function () {
+      it(moduleName + ': could not be loaded', function() {
+        throw error;
+      });
+    });
+  };
+
   TestLoader.load();
 
   mocha.run();
