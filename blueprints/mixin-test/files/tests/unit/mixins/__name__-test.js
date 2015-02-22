@@ -1,6 +1,8 @@
+/* global describe */
 /* jshint expr:true */
 import Ember from 'ember';
 import <%= classifiedModuleName %>Mixin from '<%= dasherizedPackageName %>/mixins/<%= dasherizedModuleName %>';
+import { it } from 'ember-mocha';
 
 describe('<%= classifiedModuleName %>Mixin', function() {
   // Replace this with your real tests.
