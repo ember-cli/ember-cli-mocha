@@ -1,4 +1,10 @@
 /* jshint expr:true */
+import { expect } from 'chai';
+import {
+  describe,
+  it,
+  beforeEach
+} from 'mocha';
 import Ember from 'ember';
 import { initialize } from '<%= dasherizedPackageName %>/initializers/<%= dasherizedModuleName %>';
 

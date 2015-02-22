@@ -1,4 +1,9 @@
 /* jshint expr:true */
+import { expect } from 'chai';
+import {
+  describe,
+  it
+} from 'mocha';
 import Ember from 'ember';
 import <%= classifiedModuleName %>Mixin from '<%= dasherizedPackageName %>/mixins/<%= dasherizedModuleName %>';
 

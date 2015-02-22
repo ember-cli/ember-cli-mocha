@@ -1,4 +1,9 @@
 /* jshint expr:true */
+import { expect } from 'chai';
+import {
+  describe,
+  it
+} from 'mocha';
 import <%= camelizedModuleName %> from '<%= dasherizedPackageName %>/utils/<%= dasherizedModuleName %>';
 
 describe('<%= camelizedModuleName %>', function() {
