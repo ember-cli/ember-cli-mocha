@@ -12,7 +12,7 @@ module.exports = {
   afterInstall: function() {
     var addonContext = this;
 
-    return this.addBowerPackageToProject('ember-mocha', '~0.6.1')
+    return this.addBowerPackageToProject('ember-mocha', '~0.6.2')
       .then(function() {
         return addonContext.addBowerPackageToProject('ember-cli/ember-cli-test-loader', '0.1.3');
       })
