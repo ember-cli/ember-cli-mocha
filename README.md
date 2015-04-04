@@ -8,9 +8,6 @@ Remove QUnit from your ember-cli app:
 
 ```sh
 npm rm ember-cli-qunit --save-dev
-bower uninstall --save ember-qunit
-bower uninstall --save qunit
-bower uninstall --save ember-qunit-notifications
 ```
 
 Install ember-cli-mocha:
