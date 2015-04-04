@@ -42,7 +42,7 @@ module.exports = {
         'vendor/ember-cli-mocha/test-loader.js'
       ];
 
-      var addonOptions = app.options['ember-cli-mocha'];
+      var addonOptions = app.options['ember-cli-mocha'] || {};
       if (addonOptions && !addonOptions.disableContainerStyles) {
         fileAssets.push('vendor/ember-cli-mocha/test-container-styles.css');
       }
