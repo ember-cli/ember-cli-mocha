@@ -18,6 +18,11 @@ module.exports = {
       })
       .then(function() {
         return addonContext.addBowerPackageToProject('ember-cli/ember-cli-shims', '0.0.3');
+      })
+      .then(function() {
+        if ('removePackageFromProject' in addonContext) {
+          return addonContext.removePackageFromProject('ember-cli-qunit');
+        }
       });
   }
 };
