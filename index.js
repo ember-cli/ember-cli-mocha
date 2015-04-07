@@ -14,7 +14,14 @@ module.exports = {
       var queryString = '';
 
       if (options.filter) {
-        queryString = "grep=" + options.filter;
+        // If the filter begins with a hat char (^), invert the grep
+        var exclusionMatch = options.filter.match(/\^(.*)/);
+
+        if (exclusionMatch) {
+          queryString = 'invert=1&grep=' + exclusionMatch[1];
+        } else {
+          queryString = 'grep=' + options.filter;
+        }
       }
 
       return queryString;
