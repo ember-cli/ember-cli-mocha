@@ -15,10 +15,22 @@ module.exports = {
 
       if (options.filter) {
         queryString = "grep=" + options.filter;
+
+        if (options.invert) {
+          queryString += '&invert=1';
+        }
       }
 
       return queryString;
     };
+
+    TestCommand.prototype.availableOptions.push({
+      name: 'invert',
+      type: Boolean,
+      default: false,
+      description: 'Invert the filter specified by the --filter argument',
+      aliases: ['i']
+    });
   },
 
   init: function() {
