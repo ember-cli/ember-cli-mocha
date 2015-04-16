@@ -13,8 +13,8 @@ describe('<%= classifiedModuleName %>Initializer', function() {
 
   beforeEach(function() {
     Ember.run(function() {
-      container = new Ember.Container();
       application = Ember.Application.create();
+      container = application.__container__;
       application.deferReadiness();
     });
   });
