@@ -9,15 +9,15 @@ import { expect } from 'chai';
 import Ember from 'ember';
 import startApp from '../helpers/start-app';
 
-var App;
-
 describe('Acceptance: <%= classifiedModuleName %>', function() {
+  var application;
+  
   beforeEach(function() {
-    App = startApp();
+    application = startApp();
   });
 
   afterEach(function() {
-    Ember.run(App, 'destroy');
+    Ember.run(application, 'destroy');
   });
 
   it('can visit /<%= dasherizedModuleName %>', function() {
