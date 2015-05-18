@@ -24,6 +24,6 @@ jQuery(document).ready(function() {
   setTimeout(function() {
     TestLoader.load();
 
-    mocha.run();
+    window.mochaRunner = mocha.run();
   }, 250);
 });
