@@ -17,8 +17,8 @@ module.exports = {
       prefix = 'Integration: ';
       testOpts = 'integration: true';
       defaultTest = "// renders the component on the page\n" +
-             "       this.render(hbs`{{" + options.entity.name + "}}`);\n" +
-             "       expect(this.$()).to.be.ok;";
+              "      this.render(hbs`{{" + options.entity.name + "}}`);\n" +
+              "      expect(this.$()).to.be.ok;";
     } else {
       additionalImports = '';
       prefix = '';
