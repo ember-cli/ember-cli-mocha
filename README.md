@@ -4,17 +4,10 @@ Mocha / Chai testing for your Ember CLI apps.
 
 ## Installation
 
-Remove QUnit from your ember-cli app:
-
-```sh
-npm rm ember-cli-qunit --save-dev
-```
-
 Install ember-cli-mocha:
 
 ```sh
-npm install ember-cli-mocha --save-dev
-ember generate ember-cli-mocha
+ember install ember-cli-mocha
 ```
 
 ## Usage
