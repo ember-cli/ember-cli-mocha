@@ -3,8 +3,7 @@ import { expect } from 'chai';
 import {
   describeComponent,
   it
-} from 'ember-mocha';
-<%= additionalImports %>
+} from 'ember-mocha';<%= testImports %>
 
 describeComponent(
   '<%= dasherizedModuleName %>',
@@ -14,7 +13,7 @@ describeComponent(
   },
   function() {
     it('renders', function() {
-      <%= defaultTest %>
+      <%= testContent %>
     });
   }
 );

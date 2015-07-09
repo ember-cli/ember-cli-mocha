@@ -1,61 +1,68 @@
+/*jshint node:true*/
+
+var EOL  = require('os').EOL;
+
 module.exports = {
-  description: 'Generates a component test.',
+  description: 'Generates a component integration or unit test.',
 
   availableOptions: [
     {
-      name: 'integration',
-      type: Boolean,
-      default: false,
-      aliases: ['i']
+      name: 'test-type',
+      type: ['integration', 'unit'],
+      default: 'integration',
+      aliases: [
+        { 'i': 'integration'},
+        { 'u': 'unit'},
+        { 'integration': 'integration' },
+        { 'unit': 'unit' }
+      ]
     }
   ],
 
   locals: function(options) {
-    var additionalImports, prefix, testOpts, defaultTest;
-    if (options.integration) {
-      additionalImports = "import hbs from 'htmlbars-inline-precompile';";
+    var testImports, prefix, testOpts, testContent;
+    if (options.testType === 'unit') {
+      testImports = '';
+      prefix = '';
+      testOpts =  "// specify the other units that are required for this test" + EOL +
+              "    // needs: ['component:foo', 'helper:bar']";
+      testContent = "// creates the component instance" + EOL +
+              "      var component = this.subject();" + EOL +
+              "      // renders the component on the page" + EOL +
+              "      this.render();" + EOL +
+              "      expect(component).to.be.ok;" + EOL +
+              "      expect(this.$()).to.have.length(1);";
+    } else {
+      testImports = EOL + "import hbs from 'htmlbars-inline-precompile';";
       prefix = 'Integration: ';
       testOpts = 'integration: true';
-      defaultTest = "// renders the component on the page\n" +
-             "       this.render(hbs`{{" + options.entity.name + "}}`);\n" +
-             "       expect(this.$()).to.be.ok;";
-    } else {
-      additionalImports = '';
-      prefix = '';
-      testOpts =  "// specify the other units that are required for this test\n" +
-              "    // needs: ['component:foo', 'helper:bar']";
-      defaultTest = "// creates the component instance\n" +
-              "      var component = this.subject();\n" +
-              "      expect(component._state).to.equal('preRender');\n\n" +
-              "      // renders the component on the page\n" +
-              "      this.render();\n" +
-              "      expect(component._state).to.equal('inDOM');";
+      testContent = "// Set any properties with this.set('myProperty', 'value');" + EOL +
+              "      // Handle any actions with this.on('myAction', function(val) { ... });" + EOL +
+              "      // Template block usage:" + EOL +
+              "      // this.render(hbs`" + EOL +
+              "      //   {{#" + options.entity.name + "}}" + EOL +
+              "      //     template content" + EOL +
+              "      //   {{/" + options.entity.name + "}}" + EOL +
+              "      // `);" + EOL + EOL +
+              "      this.render(hbs`{{" + options.entity.name + "}}`);" + EOL +
+              "      expect(this.$()).to.have.length(1);";
     }
 
     return {
-      additionalImports: additionalImports,
+      testImports: testImports,
       testPrefix: prefix,
       testOpts: testOpts,
-      defaultTest: defaultTest,
-      integration: options.integration
+      testContent: testContent,
+      integration: options.integration,
+      testType: options.testType
     };
   },
 
-  fileMapTokens: function(options) {
+  fileMapTokens: function() {
     return {
-      __testfolder__: function(options) {
-        if (options.locals.integration) {
-          return 'integration';
-        } else {
-          return 'unit';
-        }
+      __testType__: function(options) {
+        return options.locals.testType || 'integration';
       }
     };
-  },
-
-  afterInstall: function(options) {
-    if (!options.integration) { return; }
-
-    return this.addPackageToProject('ember-cli-htmlbars-inline-precompile', '^0.1.1');
   }
 };
