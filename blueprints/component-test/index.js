@@ -8,7 +8,7 @@ module.exports = {
   availableOptions: [
     {
       name: 'test-type',
-      type: ['integration', 'unit'],
+      type: String,
       default: 'integration',
       aliases: [
         { 'i': 'integration'},
