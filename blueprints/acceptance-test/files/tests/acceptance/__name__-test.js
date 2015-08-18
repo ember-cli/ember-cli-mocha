@@ -11,7 +11,7 @@ import startApp from '../helpers/start-app';
 
 describe('Acceptance: <%= classifiedModuleName %>', function() {
   var application;
-  
+
   beforeEach(function() {
     application = startApp();
   });
