@@ -17,14 +17,14 @@ describe('Acceptance: <%= classifiedModuleName %>', function() {
   });
 
   afterEach(function() {
-    Ember.run(application, 'destroy');
+    application.destroy();
+  });
+
+  beforeEach(function() {
+    visit('/<%= dasherizedModuleName %>');
   });
 
   it('can visit /<%= dasherizedModuleName %>', function() {
-    visit('/<%= dasherizedModuleName %>');
-
-    andThen(function() {
-      expect(currentPath()).to.equal('<%= dasherizedModuleName %>');
-    });
+    expect(currentPath()).to.equal('<%= dasherizedModuleName %>');
   });
 });
