@@ -10,14 +10,12 @@ import Ember from 'ember';
 import startApp from '../helpers/start-app';
 
 describe('Acceptance: <%= classifiedModuleName %>', function() {
-  var application;
-
   beforeEach(function() {
-    application = startApp();
+    this.application = startApp();
   });
 
   afterEach(function() {
-    application.destroy();
+    this.application.destroy();
   });
 
   beforeEach(function() {
