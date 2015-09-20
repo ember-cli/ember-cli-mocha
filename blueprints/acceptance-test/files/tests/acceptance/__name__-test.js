@@ -6,8 +6,8 @@ import {
   afterEach
 } from 'mocha';
 import { expect } from 'chai';
-import Ember from 'ember';
 import startApp from '../helpers/start-app';
+<% if (destroyAppExists) { %>import destroyApp from '../helpers/destroy-app';<% } else { %>import Ember from 'ember';<% } %>
 
 describe('Acceptance: <%= classifiedModuleName %>', function() {
   var application;
@@ -17,7 +17,7 @@ describe('Acceptance: <%= classifiedModuleName %>', function() {
   });
 
   afterEach(function() {
-    Ember.run(application, 'destroy');
+    <% if (destroyAppExists) { %>destroyApp(application);<% } else { %>Ember.run(application, 'destroy');<% } %>
   });
 
   it('can visit /<%= dasherizedModuleName %>', function() {
