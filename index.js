@@ -13,17 +13,21 @@ module.exports = {
     var TestCommand = this.project.require('ember-cli/lib/commands/test');
 
     TestCommand.prototype.buildTestPageQueryString = function(options) {
-      var queryString = '';
+      var params = [];
 
       if (options.filter) {
-        queryString = "grep=" + options.filter;
+        params.push('grep=' + options.filter);
 
         if (options.invert) {
-          queryString += '&invert=1';
+           params.push('invert=1');
         }
       }
 
-      return queryString;
+      if (options.query) {
+        params.push(options.query);
+      }
+
+      return params.join('&');
     };
 
     TestCommand.prototype.availableOptions.push({
