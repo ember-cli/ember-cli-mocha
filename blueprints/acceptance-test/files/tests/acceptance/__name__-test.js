@@ -10,21 +10,19 @@ import Ember from 'ember';
 import startApp from '../helpers/start-app';
 
 describe('Acceptance: <%= classifiedModuleName %>', function() {
-  var application;
-
   beforeEach(function() {
-    application = startApp();
+    this.application = startApp();
   });
 
   afterEach(function() {
-    Ember.run(application, 'destroy');
+    this.application.destroy();
+  });
+
+  beforeEach(function() {
+    visit('/<%= dasherizedModuleName %>');
   });
 
   it('can visit /<%= dasherizedModuleName %>', function() {
-    visit('/<%= dasherizedModuleName %>');
-
-    andThen(function() {
-      expect(currentPath()).to.equal('<%= dasherizedModuleName %>');
-    });
+    expect(currentPath()).to.equal('<%= dasherizedModuleName %>');
   });
 });
