@@ -63,8 +63,11 @@ module.exports = {
     return path.join(__dirname, 'blueprints');
   },
 
-  included: function(app) {
-    this._super.included(app);
+  included: function included(app, parentAddon) {
+    var target = (parentAddon || app);
+    this._super.included.call(this, target);
+
+    this.options = target.options;
 
     if (app.tests) {
       var fileAssets = [
@@ -122,7 +125,7 @@ module.exports = {
 
   lintTree: function(type, tree) {
     // Skip if useLintTree === false.
-    if (this.options['ember-cli-mocha'] && this.options['ember-cli-mocha'].useLintTree === false) {
+    if (this.options && this.options['ember-cli-mocha'] && this.options['ember-cli-mocha'].useLintTree === false) {
       // Fakes an empty broccoli tree
       return { inputTree: tree, rebuild: function() { return []; } };
     }
