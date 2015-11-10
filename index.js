@@ -121,6 +121,12 @@ module.exports = {
   },
 
   lintTree: function(type, tree) {
+    // Skip if useLintTree === false.
+    if (this.options['ember-cli-mocha'] && this.options['ember-cli-mocha'].useLintTree === false) {
+      // Fakes an empty broccoli tree
+      return { inputTree: tree, rebuild: function() { return []; } };
+    }
+
     return jshintTrees(tree, {
       jshintrcPath: this.jshintrc[type],
       description: 'JSHint ' + type + '- Mocha',
