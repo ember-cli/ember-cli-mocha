@@ -10,8 +10,8 @@ import <%= classifiedModuleName %>Mixin from '<%= dasherizedPackageName %>/mixin
 describe('<%= classifiedModuleName %>Mixin', function() {
   // Replace this with your real tests.
   it('works', function() {
-    var <%= classifiedModuleName %>Object = Ember.Object.extend(<%= classifiedModuleName %>Mixin);
-    var subject = <%= classifiedModuleName %>Object.create();
+    let <%= classifiedModuleName %>Object = Ember.Object.extend(<%= classifiedModuleName %>Mixin);
+    let subject = <%= classifiedModuleName %>Object.create();
     expect(subject).to.be.ok;
   });
 });

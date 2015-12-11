@@ -9,7 +9,7 @@ import <%= camelizedModuleName %> from '<%= dasherizedPackageName %>/utils/<%= d
 describe('<%= camelizedModuleName %>', function() {
   // Replace this with your real tests.
   it('works', function() {
-    var result = <%= camelizedModuleName %>();
+    let result = <%= camelizedModuleName %>();
     expect(result).to.be.ok;
   });
 });

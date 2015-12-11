@@ -27,7 +27,7 @@ describeComponent(
 
       this.render(hbs`{{<%= dasherizedModuleName %>}}`);
       expect(this.$()).to.have.length(1);<% } else if(testType === 'unit') { %>// creates the component instance
-      var component = this.subject();
+      let component = this.subject();
       // renders the component on the page
       this.render();
       expect(component).to.be.ok;

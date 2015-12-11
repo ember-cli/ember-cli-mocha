@@ -11,7 +11,7 @@ import {
 describe('<%= classifiedModuleName %>Helper', function() {
   // Replace this with your real tests.
   it('works', function() {
-    var result = <%= camelizedModuleName %>(42);
+    let result = <%= camelizedModuleName %>(42);
     expect(result).to.be.ok;
   });
 });

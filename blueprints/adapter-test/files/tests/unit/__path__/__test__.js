@@ -15,7 +15,7 @@ describeModule(
   function() {
     // Replace this with your real tests.
     it('exists', function() {
-      var adapter = this.subject();
+      let adapter = this.subject();
       expect(adapter).to.be.ok;
     });
   }
