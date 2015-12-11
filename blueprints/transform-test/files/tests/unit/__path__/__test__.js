@@ -15,7 +15,7 @@ describeModule(
   function() {
     // Replace this with your real tests.
     it('exists', function() {
-      var transform = this.subject();
+      let transform = this.subject();
       expect(transform).to.be.ok;
     });
   }

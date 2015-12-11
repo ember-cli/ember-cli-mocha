@@ -10,7 +10,7 @@ import startApp from '../helpers/start-app';
 <% if (destroyAppExists) { %>import destroyApp from '../helpers/destroy-app';<% } else { %>import Ember from 'ember';<% } %>
 
 describe('Acceptance: <%= classifiedModuleName %>', function() {
-  var application;
+  let application;
 
   beforeEach(function() {
     application = startApp();

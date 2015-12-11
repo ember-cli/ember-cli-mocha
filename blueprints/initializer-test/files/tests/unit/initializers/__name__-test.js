@@ -9,7 +9,7 @@ import Ember from 'ember';
 import { initialize } from '<%= dasherizedPackageName %>/initializers/<%= dasherizedModuleName %>';
 
 describe('<%= classifiedModuleName %>Initializer', function() {
-  var container, application;
+  let container, application;
 
   beforeEach(function() {
     Ember.run(function() {
