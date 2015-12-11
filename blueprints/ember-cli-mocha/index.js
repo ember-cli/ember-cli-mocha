@@ -13,9 +13,9 @@ module.exports = {
     var addonContext = this;
 
     return this.addBowerPackagesToProject([
-      { name: 'ember-mocha',           source: 'ember-mocha',                     target: '~0.8.6' },
-      { name: 'ember-cli-test-loader', source: 'ember-cli/ember-cli-test-loader', target: '0.1.3'  },
-      { name: 'ember-cli-shims',       source: 'ember-cli/ember-cli-shims',       target: '0.0.3'  }
+      { name: 'ember-mocha',           source: 'ember-mocha',                     target: '~0.8.8' },
+      { name: 'ember-cli-test-loader', source: 'ember-cli/ember-cli-test-loader', target: '0.2.2'  },
+      { name: 'ember-cli-shims',       source: 'ember-cli/ember-cli-shims',       target: '0.0.6'  }
     ]).then(function() {
       if ('removePackageFromProject' in addonContext) {
         return addonContext.removePackageFromProject('ember-cli-qunit');
