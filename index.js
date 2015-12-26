@@ -70,7 +70,7 @@ module.exports = {
     this.options = target.options;
 
     if (app.tests) {
-      var fileAssets = [
+      var testFiles = [
         app.bowerDirectory + '/mocha/mocha.js',
         app.bowerDirectory + '/mocha/mocha.css',
         app.bowerDirectory + '/chai/chai.js',
@@ -81,8 +81,14 @@ module.exports = {
 
       var addonOptions = app.options['ember-cli-mocha'] || {};
       if (addonOptions && !addonOptions.disableContainerStyles) {
-        fileAssets.push('vendor/ember-cli-mocha/test-container-styles.css');
+        testFiles.push('vendor/ember-cli-mocha/test-container-styles.css');
       }
+
+      testFiles.forEach(function(file) {
+        app.import(file, {
+          type: 'test'
+        });
+      });
 
       app.import(app.bowerDirectory + '/ember-mocha/ember-mocha.amd.js', {
          type: 'test',
@@ -103,13 +109,8 @@ module.exports = {
           'qunit': ['default']
         }
       });
-
-      fileAssets.forEach(function(file){
-        app.import(file, {
-          type: 'test'
-        });
-      });
     }
+
     this.jshintrc = app.options.jshintrc;
   },
 
@@ -136,7 +137,6 @@ module.exports = {
       testGenerator: testGenerator
     });
   }
-
 };
 
 function testGenerator(relativePath, passed, errors) {
