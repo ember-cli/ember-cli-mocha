@@ -28,8 +28,15 @@
   },
   "homepage": "https://github.com/switchfly/ember-cli-mocha",
   "dependencies": {
+    "broccoli-babel-transpiler": "^5.5.0",
+    "broccoli-concat": "^2.1.0",
+    "broccoli-funnel": "^1.0.1",
     "broccoli-jshint": "^1.1.0",
-    "exists-sync": "0.0.3"
+    "broccoli-merge-trees": "^1.1.1",
+    "ember-cli-version-checker": "^1.1.6",
+    "ember-mocha": "^0.8.11",
+    "exists-sync": "0.0.3",
+    "resolve": "^1.1.7"
   },
-  "bundledDependencies": [ ]
+  "bundledDependencies": []
 }
