@@ -16,7 +16,6 @@ module.exports = {
       { name: 'mocha',                 source: 'mocha',                 target: '~2.2.4' },
       { name: 'chai',                  source: 'chai',                  target: '~2.3.0' },
       { name: 'ember-mocha-adapter',   source: 'ember-mocha-adapter',   target: '~0.3.1' },
-      { name: 'ember-mocha',           source: 'ember-mocha',           target: '~0.8.8' },
       { name: 'ember-cli-test-loader', source: 'ember-cli-test-loader', target: '0.2.2'  }
     ]).then(function() {
       if ('removePackageFromProject' in addonContext) {
