@@ -203,6 +203,8 @@ module.exports = {
   },
 
   lintTree: function(type, tree) {
+    var project = this.project;
+
     // Skip if useLintTree === false.
     if (this.options && this.options['ember-cli-mocha'] && this.options['ember-cli-mocha'].useLintTree === false) {
       // Fakes an empty broccoli tree
@@ -212,21 +214,19 @@ module.exports = {
     return jshintTrees(tree, {
       jshintrcPath: this.jshintrc[type],
       description: 'JSHint ' + type + '- Mocha',
-      testGenerator: testGenerator
+      testGenerator: function(relativePath, passed, errors) {
+        if (errors) {
+          errors = "\\n" + this.escapeErrorString(errors);
+        } else {
+          errors = "";
+        }
+
+        return project.generateTestFile('JSHint - ' + relativePath, [{
+          name: 'should pass jshint',
+          passed: !!passed,
+          errorMessage: relativePath + ' should pass jshint.' + errors
+        }]);
+      }
     });
   }
-
 };
-
-function testGenerator(relativePath, passed, errors) {
-  if (errors) {
-    errors = "\\n" + this.escapeErrorString(errors);
-  } else {
-    errors = "";
-  }
-
-  return "describe('JSHint - " + relativePath + "', function(){\n" +
-    "it('should pass jshint', function() { \n" +
-    "  expect(" + !!passed + ", '" + relativePath + " should pass jshint." + errors + "').to.be.ok; \n" +
-    "})});\n";
-}
