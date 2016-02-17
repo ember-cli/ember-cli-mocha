@@ -70,6 +70,8 @@ module.exports = {
 
     this._shouldImportEmberMocha = !dep.gt('2.2.0-alpha');
     this._emberMochaLibPath = path.dirname(resolve.sync('ember-mocha'));
+
+    this.setTestGenerator();
   },
 
   postBuild: function () {
@@ -182,6 +184,22 @@ module.exports = {
 
   _readTemplate: function(name) {
     return fs.readFileSync(path.join(__dirname, 'templates', name + '.html'));
+  },
+
+  setTestGenerator: function() {
+    this.project.generateTestFile = function(moduleName, tests) {
+      var output = "describe('" + moduleName + "', function() {\n";
+
+      tests.forEach(function(test) {
+        output += "  it('" + test.name + "', function() {\n";
+        output += "    expect(" + test.passed + ", '" + test.errorMessage + "').to.be.ok;\n";
+        output += "  });\n";
+      });
+
+      output += "});\n";
+
+      return output;
+    };
   },
 
   lintTree: function(type, tree) {
