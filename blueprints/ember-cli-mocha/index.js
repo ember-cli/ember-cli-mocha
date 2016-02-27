@@ -19,10 +19,7 @@ module.exports = {
       { name: 'ember-cli-test-loader', source: 'ember-cli-test-loader', target: '0.2.2'  }
     ]).then(function() {
       if ('removePackageFromProject' in addonContext) {
-        return addonContext.removePackagesFromProject([
-          { name: 'ember-cli-qunit' },
-          { name: 'ember-qunit-notifications' }
-        ]);
+        return addonContext.removePackageFromProject('ember-cli-qunit');
       }
     });
   }
