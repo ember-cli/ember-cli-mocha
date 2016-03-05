@@ -141,7 +141,7 @@ module.exports = {
     var target = (parentAddon || app);
     this._super.included.call(this, target);
 
-    this.options = target.options;
+    this.options = target.options || {};
 
     if (app.tests) {
       var fileAssets = [
@@ -205,8 +205,14 @@ module.exports = {
   lintTree: function(type, tree) {
     var project = this.project;
 
-    // Skip if useLintTree === false.
-    if (this.options && this.options['ember-cli-mocha'] && this.options['ember-cli-mocha'].useLintTree === false) {
+    var addonContext = this;
+    var disableLinting = this.options['ember-cli-mocha'] && this.options['ember-cli-mocha'].useLintTree === false;
+    var lintingAddonExists = this.project.addons.filter(function(addon) {
+      return addonContext !== addon && addon.lintTree && addon.isDefaultJSLinter;
+    }).length > 0;
+
+    // Skip if useLintTree === false or another primary linter addon is present
+    if (disableLinting || lintingAddonExists) {
       // Fakes an empty broccoli tree
       return { inputTree: tree, rebuild: function() { return []; } };
     }
