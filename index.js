@@ -4,7 +4,6 @@
 
 var path = require('path');
 var fs = require('fs');
-var jshintTrees = require('broccoli-jshint');
 var MergeTrees = require('broccoli-merge-trees');
 var BabelTranspiler = require('broccoli-babel-transpiler');
 var Concat = require('broccoli-concat');
@@ -200,39 +199,5 @@ module.exports = {
 
       return output;
     };
-  },
-
-  lintTree: function(type, tree) {
-    var project = this.project;
-
-    var addonContext = this;
-    var disableLinting = this.options['ember-cli-mocha'] && this.options['ember-cli-mocha'].useLintTree === false;
-    var lintingAddonExists = this.project.addons.filter(function(addon) {
-      return addonContext !== addon && addon.lintTree && addon.isDefaultJSLinter;
-    }).length > 0;
-
-    // Skip if useLintTree === false or another primary linter addon is present
-    if (disableLinting || lintingAddonExists) {
-      // Fakes an empty broccoli tree
-      return { inputTree: tree, rebuild: function() { return []; } };
-    }
-
-    return jshintTrees(tree, {
-      jshintrcPath: this.jshintrc[type],
-      description: 'JSHint ' + type + '- Mocha',
-      testGenerator: function(relativePath, passed, errors) {
-        if (errors) {
-          errors = "\\n" + this.escapeErrorString(errors);
-        } else {
-          errors = "";
-        }
-
-        return project.generateTestFile('JSHint - ' + relativePath, [{
-          name: 'should pass jshint',
-          passed: !!passed,
-          errorMessage: relativePath + ' should pass jshint.' + errors
-        }]);
-      }
-    });
   }
 };
