@@ -191,9 +191,14 @@ module.exports = {
       var output = "describe('" + moduleName + "', function() {\n";
 
       tests.forEach(function(test) {
-        output += "  it('" + test.name + "', function() {\n";
-        output += "    expect(" + test.passed + ", '" + test.errorMessage + "').to.be.ok;\n";
-        output += "  });\n";
+        output +=
+          "  it('" + test.name + "', function() {\n" +
+          "    if (!" + test.passed + ") {\n" +
+          "      var error = new chai.AssertionError('" + test.errorMessage + "');\n" +
+          "      error.stack = undefined;" +
+          "      throw error;\n" +
+          "    }\n" +
+          "  });\n";
       });
 
       output += "});\n";
