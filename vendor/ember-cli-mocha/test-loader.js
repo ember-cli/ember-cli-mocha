@@ -1,11 +1,17 @@
-/* globals jQuery,chai,mocha */
+/* globals jQuery, chai, mocha, require, requirejs */
 
 jQuery(document).ready(function() {
   // Declare `expect` as a global here instead of as a var in individual tests.
   // This avoids jshint warnings re: `Redefinition of 'expect'`.
   window.expect = chai.expect;
 
-  var TestLoader = require('ember-cli/test-loader')['default'];
+  var testLoaderModulePath = 'ember-cli-test-loader/test-support/index';
+
+  if (!requirejs.entries[testLoaderModulePath]) {
+    testLoaderModulePath = 'ember-cli/test-loader';
+  }
+
+  var TestLoader = require(testLoaderModulePath)['default'];
   TestLoader.prototype.shouldLoadModule = function(moduleName) {
     return moduleName.match(/[-_]test$/) || moduleName.match(/\.jshint$/);
   };
