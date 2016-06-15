@@ -3,10 +3,17 @@
   "version": "0.10.4",
   "description": "Mocha and Chai tests for ember-cli applications",
   "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember try:testall"
   },
   "ember-addon": {
+    "configPath": "tests/dummy/config",
     "main": "index.js"
   },
   "repository": {
@@ -27,16 +34,40 @@
     "url": "https://github.com/switchfly/ember-cli-mocha/issues"
   },
   "homepage": "https://github.com/switchfly/ember-cli-mocha",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "broccoli-asset-rev": "^2.4.2",
+    "ember-ajax": "0.7.1",
+    "ember-cli": "2.5.1",
+    "ember-cli-app-version": "^1.0.0",
+    "ember-cli-dependency-checker": "^1.2.0",
+    "ember-cli-htmlbars": "^1.0.3",
+    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
+    "ember-cli-inject-live-reload": "^1.4.0",
+    "ember-cli-jshint": "^1.0.0",
+    "ember-cli-release": "0.2.8",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-uglify": "^1.2.0",
+    "ember-data": "^2.5.0",
+    "ember-disable-prototype-extensions": "^1.1.0",
+    "ember-export-application-global": "^1.0.5",
+    "ember-load-initializers": "^0.5.1",
+    "ember-resolver": "^2.0.3",
+    "ember-try": "^0.2.2",
+    "loader.js": "^4.0.1"
+  },
   "dependencies": {
     "broccoli-babel-transpiler": "^5.5.0",
     "broccoli-concat": "^2.1.0",
     "broccoli-funnel": "^1.0.1",
     "broccoli-jshint": "^1.1.0",
     "broccoli-merge-trees": "^1.1.1",
+    "ember-cli-babel": "^5.1.6",
     "ember-cli-version-checker": "^1.1.6",
     "ember-mocha": "^0.8.11",
     "exists-sync": "0.0.3",
     "resolve": "^1.1.7"
-  },
-  "bundledDependencies": []
+  }
 }
