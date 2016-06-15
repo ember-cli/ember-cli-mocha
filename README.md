@@ -19,22 +19,6 @@ models, controllers, components, etc. in order to generate the corresponding Moc
 Tests rely on [ember-mocha](https://github.com/switchfly/ember-mocha) modules
 and helpers. Please refer to that project to understand detailed usage.
 
-## Turning off JSHint linting
-
-If you want to turn off JSHint linting you can do the following configuration in your ember-cli-build.js file:
-
-```
-var app = new EmberApp({
-  'babel': {
-    optional: ['es7.decorators']
-  },
-
-  'ember-cli-mocha': {
-    useLintTree: false
-  }
-});
-```
-
 ## Copyright and License
 
 Copyright 2014 Switchfly
