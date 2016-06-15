@@ -6,8 +6,8 @@ import {
   afterEach
 } from 'mocha';
 import { expect } from 'chai';
-import startApp from '../helpers/start-app';
-<% if (destroyAppExists) { %>import destroyApp from '../helpers/destroy-app';<% } else { %>import Ember from 'ember';<% } %>
+import startApp from '<%= dasherizedPackageName %>/tests/helpers/start-app';
+<% if (destroyAppExists) { %>import destroyApp from '<%= dasherizedPackageName %>/tests/helpers/destroy-app';<% } else { %>import Ember from 'ember';<% } %>
 
 describe('Acceptance: <%= classifiedModuleName %>', function() {
   let application;
