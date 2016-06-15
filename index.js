@@ -63,6 +63,8 @@ module.exports = {
   },
 
   init: function() {
+    this._super.init && this._super.init.apply(this, arguments);
+
     this.overrideTestCommandFilter();
 
     var checker = new VersionChecker(this);
