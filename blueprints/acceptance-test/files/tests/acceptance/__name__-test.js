@@ -1,5 +1,5 @@
-/* jshint expr:true */
-import {
+<% if (jshintExists) { %>/* jshint expr:true */
+<% } %>import {
   describe,
   it,
   beforeEach,

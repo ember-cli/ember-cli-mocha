@@ -1,5 +1,5 @@
-/* jshint expr:true */
-import { expect } from 'chai';
+<% if (jshintExists) { %>/* jshint expr:true */
+<% } %>import { expect } from 'chai';
 import {
   describe,
   it
