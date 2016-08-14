@@ -192,14 +192,18 @@ module.exports = {
       var output = "describe('" + moduleName + "', function() {\n";
 
       tests.forEach(function(test) {
-        output +=
-          "  it('" + test.name + "', function() {\n" +
-          "    if (!" + test.passed + ") {\n" +
-          "      var error = new chai.AssertionError('" + test.errorMessage + "');\n" +
-          "      error.stack = undefined;" +
-          "      throw error;\n" +
-          "    }\n" +
-          "  });\n";
+        output += "  it('" + test.name + "', function() {\n";
+        if (test.passed) {
+          output +=
+            "    // precompiled test passed\n";
+        } else {
+          output +=
+            "    // precompiled test failed\n" +
+            "    var error = new chai.AssertionError('" + test.errorMessage + "');\n" +
+            "    error.stack = undefined;\n" +
+            "    throw error;\n";
+        }
+        output +=   "  });\n";
       });
 
       output += "});\n";
