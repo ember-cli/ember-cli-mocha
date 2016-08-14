@@ -12,10 +12,6 @@ ember install ember-cli-mocha
 
 ## Usage
 
-ember-cli-mocha overrides all of ember-cli's testing blueprints. Simply generate
-models, controllers, components, etc. in order to generate the corresponding Mocha
-/ Chai tests.
-
 Tests rely on [ember-mocha](https://github.com/switchfly/ember-mocha) modules
 and helpers. Please refer to that project to understand detailed usage.
 
