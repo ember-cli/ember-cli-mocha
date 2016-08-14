@@ -96,6 +96,13 @@ module.exports = {
   },
 
   treeForVendor: function(tree) {
+    var mochaPath = path.dirname(resolve.sync('mocha'));
+    // var mochaTree = this.treeGenerator(mochaPath);
+    var mochaTree = new Funnel(mochaPath, {
+      files: ['mocha.js', 'mocha.css'],
+      destDir: '/mocha',
+    });
+
     var emberMochaBuildSupportPath = path.join(this._emberMochaLibPath, '..', 'build-support');
 
     var mochaSetupTree = new Funnel(emberMochaBuildSupportPath, {
@@ -105,6 +112,7 @@ module.exports = {
 
     var trees = [
       tree,
+      mochaTree,
       mochaSetupTree
     ];
 
@@ -146,8 +154,8 @@ module.exports = {
 
     if (app.tests) {
       var fileAssets = [
-        app.bowerDirectory + '/mocha/mocha.js',
-        app.bowerDirectory + '/mocha/mocha.css',
+        'vendor/mocha/mocha.js',
+        'vendor/mocha/mocha.css',
         app.bowerDirectory + '/chai/chai.js',
         'vendor/ember-mocha/mocha-setup.js',
         app.bowerDirectory + '/ember-mocha-adapter/adapter.js',
