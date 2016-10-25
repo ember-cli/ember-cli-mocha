@@ -12,12 +12,20 @@ ember install ember-cli-mocha
 
 ## Usage
 
-ember-cli-mocha overrides all of ember-cli's testing blueprints. Simply generate
-models, controllers, components, etc. in order to generate the corresponding Mocha
-/ Chai tests.
-
 Tests rely on [ember-mocha](https://github.com/switchfly/ember-mocha) modules
 and helpers. Please refer to that project to understand detailed usage.
+
+### Blueprints
+
+Previous releases of this addon contained the blueprints necessary to generate
+Mocha tests for your apps and addons. These blueprints have since been moved
+into [ember.js](https://github.com/emberjs/ember.js/tree/master/blueprints),
+[ember-data](https://github.com/emberjs/data/tree/master/blueprints) and
+[ember-cli-legacy-blueprints](https://github.com/ember-cli/ember-cli-legacy-blueprints/tree/master/blueprints).
+
+Recent releases of Ember CLI contain `ember-cli-legacy-blueprints` by default.
+If you are using an older release then please add the
+`ember-cli-legacy-blueprints` dependency manually to your project.
 
 ## Copyright and License
 
