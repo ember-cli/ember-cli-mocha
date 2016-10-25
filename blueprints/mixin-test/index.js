@@ -1,3 +1,12 @@
 module.exports = {
-  description: 'Generates a mixin unit test.'
+  description: 'Generates a mixin unit test.',
+
+  locals: function() {
+    var packages = Object.keys(this.project.addonPackages);
+    var jshintExists = packages.indexOf('ember-cli-jshint') !== -1;
+
+    return {
+      jshintExists: jshintExists
+    };
+  }
 };

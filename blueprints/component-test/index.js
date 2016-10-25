@@ -19,9 +19,12 @@ module.exports = {
 
   locals: function(options) {
     var testType = options.testType || "integration";
+    var packages = Object.keys(this.project.addonPackages);
+    var jshintExists = packages.indexOf('ember-cli-jshint') !== -1;
 
     return {
-      testType: testType
+      testType: testType,
+      jshintExists: jshintExists
     };
   },
 
