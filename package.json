@@ -2,38 +2,45 @@
   "name": "ember-cli-mocha",
   "version": "0.11.0",
   "description": "Mocha and Chai tests for ember-cli applications",
+  "keywords": [
+    "chai",
+    "ember",
+    "ember-addon",
+    "mocha"
+  ],
+  "homepage": "https://github.com/switchfly/ember-cli-mocha",
+  "bugs": {
+    "url": "https://github.com/switchfly/ember-cli-mocha/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "Dan Gebhardt",
   "main": "index.js",
   "directories": {
     "doc": "doc",
     "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/switchfly/ember-cli-mocha.git"
   },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "ember-addon": {
-    "configPath": "tests/dummy/config",
-    "main": "index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/switchfly/ember-cli-mocha.git"
-  },
-  "keywords": [
-    "ember-addon",
-    "ember",
-    "mocha",
-    "chai"
-  ],
-  "author": "Dan Gebhardt",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/switchfly/ember-cli-mocha/issues"
-  },
-  "homepage": "https://github.com/switchfly/ember-cli-mocha",
-  "engines": {
-    "node": ">= 0.10.0"
+  "dependencies": {
+    "broccoli-babel-transpiler": "^5.5.0",
+    "broccoli-concat": "^2.1.0",
+    "broccoli-funnel": "^1.0.1",
+    "broccoli-merge-trees": "^1.1.1",
+    "chai": "^3.5.0",
+    "ember-cli-babel": "^5.1.6",
+    "ember-cli-test-loader": "^1.1.0",
+    "ember-cli-version-checker": "^1.1.6",
+    "ember-mocha": "^0.9.1",
+    "exists-sync": "0.0.3",
+    "mocha": "^2.5.3",
+    "resolve": "^1.1.7"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
@@ -56,18 +63,11 @@
     "ember-try": "^0.2.2",
     "loader.js": "^4.0.1"
   },
-  "dependencies": {
-    "broccoli-babel-transpiler": "^5.5.0",
-    "broccoli-concat": "^2.1.0",
-    "broccoli-funnel": "^1.0.1",
-    "broccoli-merge-trees": "^1.1.1",
-    "chai": "^3.5.0",
-    "ember-cli-babel": "^5.1.6",
-    "ember-cli-test-loader": "^1.1.0",
-    "ember-cli-version-checker": "^1.1.6",
-    "ember-mocha": "^0.9.1",
-    "exists-sync": "0.0.3",
-    "mocha": "^2.5.3",
-    "resolve": "^1.1.7"
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "ember-addon": {
+    "configPath": "tests/dummy/config",
+    "main": "index.js"
   }
 }
