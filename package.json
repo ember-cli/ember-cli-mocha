@@ -8,9 +8,9 @@
     "ember-addon",
     "mocha"
   ],
-  "homepage": "https://github.com/switchfly/ember-cli-mocha",
+  "homepage": "https://github.com/ember-cli/ember-cli-mocha",
   "bugs": {
-    "url": "https://github.com/switchfly/ember-cli-mocha/issues"
+    "url": "https://github.com/ember-cli/ember-cli-mocha/issues"
   },
   "license": "Apache-2.0",
   "author": "Dan Gebhardt",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/switchfly/ember-cli-mocha.git"
+    "url": "https://github.com/ember-cli/ember-cli-mocha.git"
   },
   "scripts": {
     "build": "ember build",
