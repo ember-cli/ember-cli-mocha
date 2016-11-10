@@ -17,7 +17,7 @@ describe('Unit | test-loader', function() {
     window.requirejs.entries = {
       'valid-test': true,
       'valid_test': true,
-      'valid.jshint': true,
+      'valid.jshint.lint-test': true,
       'not-valid-jshint': true,
       'not-a-test-module': true,
       'nohyphentest': true
@@ -34,7 +34,7 @@ describe('Unit | test-loader', function() {
     var expectedModules = [
       'valid-test',
       'valid_test',
-      'valid.jshint'
+      'valid.jshint.lint-test'
     ];
 
     expect(requiredModules).to.deep.equal(expectedModules);
