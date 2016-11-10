@@ -26,9 +26,7 @@
     "mocha",
     "chai"
   ],
-  "authors": [
-    "Dan Gebhardt"
-  ],
+  "author": "Dan Gebhardt",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/switchfly/ember-cli-mocha/issues"
