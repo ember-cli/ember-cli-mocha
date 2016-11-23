@@ -1,7 +1,35 @@
 # Change Log
 
+## [v0.12.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.12.0) (2016-11-23)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.11.0...v0.12.0)
+
+**Implemented enhancements:**
+
+- Update "ember-mocha" to v0.9.x [\#133](https://github.com/ember-cli/ember-cli-mocha/pull/133) ([Turbo87](https://github.com/Turbo87))
+
+**Fixed bugs:**
+
+- Fix broken test-loader test [\#135](https://github.com/ember-cli/ember-cli-mocha/pull/135) ([Turbo87](https://github.com/Turbo87))
+
+**Closed issues:**
+
+- Release v0.11.0 [\#128](https://github.com/ember-cli/ember-cli-mocha/issues/128)
+
+**Merged pull requests:**
+
+- ember-cli 2.9 [\#139](https://github.com/ember-cli/ember-cli-mocha/pull/139) ([Dhaulagiri](https://github.com/Dhaulagiri))
+- Remove unused dependencies [\#138](https://github.com/ember-cli/ember-cli-mocha/pull/138) ([Turbo87](https://github.com/Turbo87))
+- Cleanup package.json [\#136](https://github.com/ember-cli/ember-cli-mocha/pull/136) ([Turbo87](https://github.com/Turbo87))
+
 ## [v0.11.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.11.0) (2016-11-10)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.10.4...v0.11.0)
+
+**Implemented enhancements:**
+
+- Replace `ember-cli-test-loader` Bower with NPM dependency [\#129](https://github.com/ember-cli/ember-cli-mocha/pull/129) ([alexlafroscia](https://github.com/alexlafroscia))
+- Improved test generator output [\#125](https://github.com/ember-cli/ember-cli-mocha/pull/125) ([Turbo87](https://github.com/Turbo87))
+- Load Mocha and Chai from NPM [\#124](https://github.com/ember-cli/ember-cli-mocha/pull/124) ([Turbo87](https://github.com/Turbo87))
+- Remove JSHint lintTree [\#107](https://github.com/ember-cli/ember-cli-mocha/pull/107) ([Turbo87](https://github.com/Turbo87))
 
 **Closed issues:**
 
@@ -21,16 +49,12 @@
 
 **Merged pull requests:**
 
-- Remove `ember-cli-test-loader` bower dependency [\#129](https://github.com/ember-cli/ember-cli-mocha/pull/129) ([alexlafroscia](https://github.com/alexlafroscia))
 - Add changelog file [\#126](https://github.com/ember-cli/ember-cli-mocha/pull/126) ([Turbo87](https://github.com/Turbo87))
-- Improved test generator output [\#125](https://github.com/ember-cli/ember-cli-mocha/pull/125) ([Turbo87](https://github.com/Turbo87))
-- Load Mocha and Chai from NPM [\#124](https://github.com/ember-cli/ember-cli-mocha/pull/124) ([Turbo87](https://github.com/Turbo87))
 - Remove blueprints [\#123](https://github.com/ember-cli/ember-cli-mocha/pull/123) ([Turbo87](https://github.com/Turbo87))
 - avoid writing jshint ignore in blueprint tests if jshint is not detected [\#118](https://github.com/ember-cli/ember-cli-mocha/pull/118) ([philtobias](https://github.com/philtobias))
 - Add simple tests for test-loader [\#112](https://github.com/ember-cli/ember-cli-mocha/pull/112) ([trentmwillis](https://github.com/trentmwillis))
 - Add destroy step to instance-initializer test blueprint [\#110](https://github.com/ember-cli/ember-cli-mocha/pull/110) ([bttf](https://github.com/bttf))
 - Use absolute path in acceptance test blueprints [\#109](https://github.com/ember-cli/ember-cli-mocha/pull/109) ([Dhaulagiri](https://github.com/Dhaulagiri))
-- Remove JSHint lintTree [\#107](https://github.com/ember-cli/ember-cli-mocha/pull/107) ([Turbo87](https://github.com/Turbo87))
 
 ## [v0.10.4](https://github.com/ember-cli/ember-cli-mocha/tree/v0.10.4) (2016-06-15)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.10.3...v0.10.4)
