@@ -190,7 +190,6 @@ module.exports = {
         });
       });
     }
-    this.jshintrc = app.options.jshintrc;
   },
 
   contentFor: function(type) {
