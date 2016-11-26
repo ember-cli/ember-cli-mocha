@@ -14,7 +14,11 @@ module.exports = {
 
     return this.addBowerPackagesToProject([
       { name: 'ember-mocha-adapter',   source: 'ember-mocha-adapter',   target: '~0.3.1' },
+
     ]).then(function() {
+      return addonContext.addPackageToProject('ember-cli-chai', '^0.2.0');
+
+    }).then(function() {
       if ('removePackageFromProject' in addonContext) {
         return addonContext.removePackageFromProject('ember-cli-qunit');
       }
