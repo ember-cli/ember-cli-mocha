@@ -171,10 +171,6 @@ module.exports = {
         fileAssets.push('vendor/ember-cli-mocha/test-container-styles.css');
       }
 
-      app.import(app.bowerDirectory + '/ember-cli-shims/test-shims.js', {
-        type: 'test'
-      });
-
       fileAssets.forEach(function(file){
         app.import(file, {
           type: 'test'
