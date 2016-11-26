@@ -34,3 +34,12 @@ install:
 
 script:
   - ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+
+deploy:
+  provider: npm
+  email: tobias.bieniek@gmx.de
+  api_key:
+    secure: V/2EC1mCfWuYui+MyzrOnZqCWhwJDTEyhsrxlAPIN0T/BbHQdFgYlu+V4Pi03D/Mn0/0x50pcRmvA9A2SfylollRRTZNlnsHvc9QVT+SAp5ww49umhbOLUlEa9+HvufT1U8+t5kUYzBJ8EJJb0fXpqtpvgdf6Q5ZFeOiQ783lYg=
+  on:
+    tags: true
+    repo: ember-cli/ember-cli-mocha
