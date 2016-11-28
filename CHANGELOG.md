@@ -1,5 +1,32 @@
 # Change Log
 
+## [v0.13.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.0)
+
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.12.1...v0.13.0)
+
+**Implemented enhancements:**
+
+- Remove unused/empty `ember-cli-shims` [\#134](https://github.com/ember-cli/ember-cli-mocha/pull/134) ([alexlafroscia](https://github.com/alexlafroscia))
+- Split "chai" code into ember-cli-chai  [\#132](https://github.com/ember-cli/ember-cli-mocha/issues/132)
+- Remove dep on ember-cli-shims [\#131](https://github.com/ember-cli/ember-cli-mocha/issues/131)
+- Add "ember-cli-chai" to project instead of making it a dependency [\#144](https://github.com/ember-cli/ember-cli-mocha/pull/144) ([Turbo87](https://github.com/Turbo87))
+- Split "chai" code into "ember-cli-chai" addon [\#143](https://github.com/ember-cli/ember-cli-mocha/pull/143) ([Turbo87](https://github.com/Turbo87))
+
+**Merged pull requests:**
+
+- Update dependencies to enable Greenkeeper 🌴 [\#137](https://github.com/ember-cli/ember-cli-mocha/pull/137) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+
+## [v0.12.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.12.1) (2016-11-27)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.12.0...v0.12.1)
+
+**Implemented enhancements:**
+
+- CI: Publish tags to NPM [\#145](https://github.com/ember-cli/ember-cli-mocha/pull/145) ([Turbo87](https://github.com/Turbo87))
+
+**Fixed bugs:**
+
+- Update "ember-mocha" to v0.9.4 [\#146](https://github.com/ember-cli/ember-cli-mocha/pull/146) ([Turbo87](https://github.com/Turbo87))
+
 ## [v0.12.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.12.0) (2016-11-23)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.11.0...v0.12.0)
 
