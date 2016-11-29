@@ -50,12 +50,9 @@ module.exports = {
     }
 
     var emberTestHelpersPath = path.dirname(resolve.sync('ember-test-helpers', { basedir: this._emberMochaLibPath }));
-    var klassyPath = path.dirname(resolve.sync('klassy', { basedir: emberTestHelpersPath }));
-
     this._dependencyTrees = [
       this.treeGenerator(this._emberMochaLibPath),
       this.treeGenerator(emberTestHelpersPath),
-      this.treeGenerator(klassyPath)
     ];
 
     return this._dependencyTrees;
