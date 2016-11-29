@@ -36,7 +36,7 @@
     "ember-cli-babel": "^5.1.7",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-version-checker": "^1.1.6",
-    "ember-mocha": "^0.9.4",
+    "ember-mocha": "^0.10.0",
     "mocha": "^2.5.3",
     "resolve": "^1.1.7"
   },
