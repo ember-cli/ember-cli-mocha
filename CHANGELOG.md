@@ -1,16 +1,37 @@
 # Change Log
 
-## [v0.13.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.0)
+## [v0.13.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.1) (2016-12-09)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.0...v0.13.1)
 
+**Implemented enhancements:**
+
+- Update blueprints [\#142](https://github.com/ember-cli/ember-cli-mocha/issues/142)
+- Use "ember-mocha-adapter" from "ember-mocha" NPM package [\#158](https://github.com/ember-cli/ember-cli-mocha/pull/158) ([Turbo87](https://github.com/Turbo87))
+- blueprints: Update auto-installed "ember-cli-chai" to v0.3.0 [\#156](https://github.com/ember-cli/ember-cli-mocha/pull/156) ([Turbo87](https://github.com/Turbo87))
+- Replace JSHint with ESLint [\#152](https://github.com/ember-cli/ember-cli-mocha/pull/152) ([Turbo87](https://github.com/Turbo87))
+
+**Fixed bugs:**
+
+- CI: Fix path to "ember" executable [\#155](https://github.com/ember-cli/ember-cli-mocha/pull/155) ([Turbo87](https://github.com/Turbo87))
+
+**Merged pull requests:**
+
+- Update ember-mocha to the latest version 🚀 [\#157](https://github.com/ember-cli/ember-cli-mocha/pull/157) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-cli-chai to the latest version 🚀 [\#153](https://github.com/ember-cli/ember-cli-mocha/pull/153) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-load-initializers to the latest version 🚀 [\#150](https://github.com/ember-cli/ember-cli-mocha/pull/150) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-cli to the latest version 🚀 [\#149](https://github.com/ember-cli/ember-cli-mocha/pull/149) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-mocha to the latest version 🚀 [\#148](https://github.com/ember-cli/ember-cli-mocha/pull/148) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+
+## [v0.13.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.0) (2016-11-28)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.12.1...v0.13.0)
 
 **Implemented enhancements:**
 
-- Remove unused/empty `ember-cli-shims` [\#134](https://github.com/ember-cli/ember-cli-mocha/pull/134) ([alexlafroscia](https://github.com/alexlafroscia))
 - Split "chai" code into ember-cli-chai  [\#132](https://github.com/ember-cli/ember-cli-mocha/issues/132)
 - Remove dep on ember-cli-shims [\#131](https://github.com/ember-cli/ember-cli-mocha/issues/131)
 - Add "ember-cli-chai" to project instead of making it a dependency [\#144](https://github.com/ember-cli/ember-cli-mocha/pull/144) ([Turbo87](https://github.com/Turbo87))
 - Split "chai" code into "ember-cli-chai" addon [\#143](https://github.com/ember-cli/ember-cli-mocha/pull/143) ([Turbo87](https://github.com/Turbo87))
+- Remove unused/empty `ember-cli-shims` [\#134](https://github.com/ember-cli/ember-cli-mocha/pull/134) ([alexlafroscia](https://github.com/alexlafroscia))
 
 **Merged pull requests:**
 
