@@ -103,7 +103,7 @@ module.exports = {
     var emberMochaBuildSupportPath = path.join(this._emberMochaLibPath, '..', 'build-support');
 
     var mochaSetupTree = new Funnel(emberMochaBuildSupportPath, {
-      files: ['mocha-setup.js'],
+      files: ['mocha-setup.js', 'ember-mocha-adapter.js'],
       destDir: '/ember-mocha'
     });
 
@@ -154,7 +154,7 @@ module.exports = {
         'vendor/mocha/mocha.js',
         'vendor/mocha/mocha.css',
         'vendor/ember-mocha/mocha-setup.js',
-        app.bowerDirectory + '/ember-mocha-adapter/adapter.js',
+        'vendor/ember-mocha/ember-mocha-adapter.js',
         'vendor/ember-cli-mocha/test-loader.js'
       ];
 
