@@ -1,5 +1,18 @@
 # Change Log
 
+## [v0.13.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.2) (2017-01-29)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.1...v0.13.2)
+
+**Implemented enhancements:**
+
+- Make compatible with ember-cli@2.12. [\#166](https://github.com/ember-cli/ember-cli-mocha/pull/166) ([rwjblue](https://github.com/rwjblue))
+
+**Merged pull requests:**
+
+- CI: Switch NPM deploy user to "ember-cli" [\#163](https://github.com/ember-cli/ember-cli-mocha/pull/163) ([Turbo87](https://github.com/Turbo87))
+- Update ember-cli-eslint to the latest version 🚀 [\#161](https://github.com/ember-cli/ember-cli-mocha/pull/161) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-cli-eslint to the latest version 🚀 [\#160](https://github.com/ember-cli/ember-cli-mocha/pull/160) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+
 ## [v0.13.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.1) (2016-12-09)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.0...v0.13.1)
 
