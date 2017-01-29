@@ -68,6 +68,7 @@ module.exports = {
 
     this._shouldImportEmberMocha = !dep.gt('2.2.0-alpha');
     this._emberMochaLibPath = path.dirname(resolve.sync('ember-mocha'));
+    this._shouldPreprocessAddonTestSupport = !!this.options && !!this.options.babel;
 
     this.setTestGenerator();
   },
@@ -140,7 +141,15 @@ module.exports = {
 
   treeForAddonTestSupport: function() {
     // for Ember CLI >= 2.2.0-beta.1
-    return new MergeTrees(this._getDependencyTrees());
+    var tree = new MergeTrees(this._getDependencyTrees());
+
+    if (this._shouldPreprocessAddonTestSupport) {
+      return this.preprocessJs(tree, {
+        registry: this.registry
+      });
+    } else {
+      return tree;
+    }
   },
 
   included: function included(app, parentAddon) {
