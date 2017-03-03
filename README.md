@@ -1,6 +1,7 @@
 # ember-cli-mocha
 
 [![Build Status](https://travis-ci.org/ember-cli/ember-cli-mocha.svg?branch=master)](https://travis-ci.org/ember-cli/ember-cli-mocha)
+[![npm version](https://badge.fury.io/js/ember-cli-mocha.svg)](https://badge.fury.io/js/ember-cli-mocha)
 
 Mocha / Chai testing for your Ember CLI apps.
 
