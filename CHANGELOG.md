@@ -1,5 +1,33 @@
 # Change Log
 
+## [v0.13.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.3) (2017-04-22)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.2...v0.13.3)
+
+**Fixed bugs:**
+
+- Not compatible with ember-cli@2.13 [\#182](https://github.com/ember-cli/ember-cli-mocha/issues/182)
+
+**Closed issues:**
+
+- updating project to ember-cli@2.12.1 seems to fail on untranspiled ember-mocha in vendor.js [\#189](https://github.com/ember-cli/ember-cli-mocha/issues/189)
+- An in-range update of broccoli-merge-trees is breaking the build 🚨 [\#174](https://github.com/ember-cli/ember-cli-mocha/issues/174)
+- An in-range update of loader.js is breaking the build 🚨 [\#173](https://github.com/ember-cli/ember-cli-mocha/issues/173)
+- An in-range update of broccoli-concat is breaking the build 🚨 [\#172](https://github.com/ember-cli/ember-cli-mocha/issues/172)
+
+**Merged pull requests:**
+
+- Prevent clobbering custom `this.options.babel` [\#190](https://github.com/ember-cli/ember-cli-mocha/pull/190) ([rwjblue](https://github.com/rwjblue))
+- Update ember-cli-test-loader to the latest version 🚀 [\#187](https://github.com/ember-cli/ember-cli-mocha/pull/187) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-load-initializers to the latest version 🚀 [\#186](https://github.com/ember-cli/ember-cli-mocha/pull/186) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-source to the latest version 🚀 [\#180](https://github.com/ember-cli/ember-cli-mocha/pull/180) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-resolver to the latest version 🚀 [\#179](https://github.com/ember-cli/ember-cli-mocha/pull/179) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update broccoli-merge-trees to the latest version 🚀 [\#178](https://github.com/ember-cli/ember-cli-mocha/pull/178) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Add emberobserver.com badge [\#177](https://github.com/ember-cli/ember-cli-mocha/pull/177) ([simonihmig](https://github.com/simonihmig))
+- Add npm badge [\#176](https://github.com/ember-cli/ember-cli-mocha/pull/176) ([simonihmig](https://github.com/simonihmig))
+- Add Travis badge [\#175](https://github.com/ember-cli/ember-cli-mocha/pull/175) ([simonihmig](https://github.com/simonihmig))
+- Update ember-cli to the latest version 🚀 [\#171](https://github.com/ember-cli/ember-cli-mocha/pull/171) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- fix\(package\): update broccoli-concat to version 3.1.1 [\#169](https://github.com/ember-cli/ember-cli-mocha/pull/169) ([rwjblue](https://github.com/rwjblue))
+
 ## [v0.13.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.2) (2017-01-29)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.1...v0.13.2)
 
