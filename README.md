@@ -19,6 +19,11 @@ ember install ember-cli-mocha
 Tests rely on [ember-mocha](https://github.com/switchfly/ember-mocha) modules
 and helpers. Please refer to that project to understand detailed usage.
 
+## Compatibility
+
+- Ember CLI v2.13+ requires at least `ember-cli-mocha` v0.13.3
+- Ember CLI v2.12+ requires at least `ember-cli-mocha` v0.13.2
+
 ### Blueprints
 
 Previous releases of this addon contained the blueprints necessary to generate
