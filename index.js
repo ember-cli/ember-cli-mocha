@@ -156,8 +156,6 @@ module.exports = {
     var target = (parentAddon || app);
     this._super.included.call(this, target);
 
-    this.options = target.options || {};
-
     if (app.tests) {
       var fileAssets = [
         'vendor/mocha/mocha.js',
