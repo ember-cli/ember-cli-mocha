@@ -5,11 +5,8 @@
 var path = require('path');
 var fs = require('fs');
 var MergeTrees = require('broccoli-merge-trees');
-var BabelTranspiler = require('broccoli-babel-transpiler');
-var Concat = require('broccoli-concat');
 var Funnel = require('broccoli-funnel');
 var resolve = require('resolve');
-var VersionChecker = require('ember-cli-version-checker');
 
 module.exports = {
   name: 'Ember CLI Mocha',
