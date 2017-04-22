@@ -63,10 +63,6 @@ module.exports = {
 
     this.overrideTestCommandFilter();
 
-    var checker = new VersionChecker(this);
-    var dep = checker.for('ember-cli', 'npm');
-
-    this._shouldImportEmberMocha = !dep.gt('2.2.0-alpha');
     this._emberMochaLibPath = path.dirname(resolve.sync('ember-mocha'));
     this._shouldPreprocessAddonTestSupport = !!this.options && !!this.options.babel;
 
@@ -114,33 +110,12 @@ module.exports = {
       mochaSetupTree
     ];
 
-    if (this._shouldImportEmberMocha) {
-      // support for Ember CLI < 2.2.0-beta.1
-      var depTree = new MergeTrees(this._getDependencyTrees());
-
-      var transpiled = new BabelTranspiler(depTree, {
-        loose: true,
-        moduleIds: true,
-        modules: 'amdStrict'
-      });
-
-      var concattedTree = new Concat(transpiled, {
-        inputFiles: ['**/*.js'],
-        outputFile: '/ember-mocha/ember-mocha.js',
-        annotation: 'Concat: Ember Mocha'
-      });
-
-
-      trees.push(concattedTree);
-    }
-
     return new MergeTrees(trees, {
       annotation: 'ember-cli-mocha: treeForVendor'
     });
   },
 
   treeForAddonTestSupport: function() {
-    // for Ember CLI >= 2.2.0-beta.1
     var tree = new MergeTrees(this._getDependencyTrees());
 
     if (this._shouldPreprocessAddonTestSupport) {
@@ -164,11 +139,6 @@ module.exports = {
         'vendor/ember-mocha/ember-mocha-adapter.js',
         'vendor/ember-cli-mocha/test-loader.js'
       ];
-
-      if (this._shouldImportEmberMocha) {
-        // support for Ember CLI < 2.2.0-beta.1
-        fileAssets.push('vendor/ember-mocha/ember-mocha.js');
-      }
 
       var addonOptions = app.options['ember-cli-mocha'] || {};
       if (addonOptions && !addonOptions.disableContainerStyles) {
