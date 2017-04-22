@@ -33,7 +33,7 @@
     "broccoli-concat": "^3.1.1",
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^2.0.0",
-    "ember-cli-babel": "^5.1.7",
+    "ember-cli-babel": "^6.0.0",
     "ember-cli-test-loader": "^2.0.0",
     "ember-cli-version-checker": "^1.1.6",
     "ember-mocha": "^0.11.0",
