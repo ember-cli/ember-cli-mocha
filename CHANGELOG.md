@@ -1,11 +1,33 @@
 # Change Log
 
-## [v0.13.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.3) (2017-04-22)
+## [v0.14.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.0) (2017-04-28)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.3...v0.14.0)
+
+**Implemented enhancements:**
+
+- Remove unused dev dependencies [\#196](https://github.com/ember-cli/ember-cli-mocha/pull/196) ([Turbo87](https://github.com/Turbo87))
+
+**Closed issues:**
+
+- An in-range update of ember-cli-version-checker is breaking the build 🚨 [\#193](https://github.com/ember-cli/ember-cli-mocha/issues/193)
+- mochas require\(\) overwrites embers require\(\) [\#141](https://github.com/ember-cli/ember-cli-mocha/issues/141)
+- Async Integration not working [\#85](https://github.com/ember-cli/ember-cli-mocha/issues/85)
+
+**Merged pull requests:**
+
+- chore\(package\): update ember-cli to version 2.12.2 [\#195](https://github.com/ember-cli/ember-cli-mocha/pull/195) ([Turbo87](https://github.com/Turbo87))
+- Update ember-source to the latest version 🚀 [\#194](https://github.com/ember-cli/ember-cli-mocha/pull/194) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-cli-babel to the latest version 🚀 [\#191](https://github.com/ember-cli/ember-cli-mocha/pull/191) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-resolver to the latest version 🚀 [\#185](https://github.com/ember-cli/ember-cli-mocha/pull/185) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-cli-eslint to the latest version 🚀 [\#184](https://github.com/ember-cli/ember-cli-mocha/pull/184) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+
+## [v0.13.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.3) (2017-04-21)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.2...v0.13.3)
 
 **Fixed bugs:**
 
 - Not compatible with ember-cli@2.13 [\#182](https://github.com/ember-cli/ember-cli-mocha/issues/182)
+- Prevent clobbering custom `this.options.babel` [\#190](https://github.com/ember-cli/ember-cli-mocha/pull/190) ([rwjblue](https://github.com/rwjblue))
 
 **Closed issues:**
 
@@ -16,7 +38,6 @@
 
 **Merged pull requests:**
 
-- Prevent clobbering custom `this.options.babel` [\#190](https://github.com/ember-cli/ember-cli-mocha/pull/190) ([rwjblue](https://github.com/rwjblue))
 - Update ember-cli-test-loader to the latest version 🚀 [\#187](https://github.com/ember-cli/ember-cli-mocha/pull/187) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
 - Update ember-load-initializers to the latest version 🚀 [\#186](https://github.com/ember-cli/ember-cli-mocha/pull/186) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
 - Update ember-source to the latest version 🚀 [\#180](https://github.com/ember-cli/ember-cli-mocha/pull/180) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
