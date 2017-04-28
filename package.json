@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-mocha",
-  "version": "0.13.3",
+  "version": "0.14.0",
   "description": "Mocha and Chai tests for ember-cli applications",
   "keywords": [
     "chai",
