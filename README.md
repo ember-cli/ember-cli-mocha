@@ -21,6 +21,7 @@ and helpers. Please refer to that project to understand detailed usage.
 
 ## Compatibility
 
+- `ember-cli-mocha` v0.14.0 requires at least Ember CLI v2.2.0 and Node.js 4
 - Ember CLI v2.13+ requires at least `ember-cli-mocha` v0.13.3
 - Ember CLI v2.12+ requires at least `ember-cli-mocha` v0.13.2
 
