@@ -2,6 +2,12 @@
   "name": "ember-cli-mocha",
   "version": "0.14.0",
   "description": "Mocha and Chai tests for ember-cli applications",
+  "files": [
+    "blueprints/",
+    "templates/",
+    "vendor/",
+    "index.js"
+  ],
   "keywords": [
     "chai",
     "ember",
