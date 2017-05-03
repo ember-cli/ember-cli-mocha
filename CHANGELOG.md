@@ -1,5 +1,16 @@
 # Change Log
 
+## [v0.14.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.1) (2017-05-03)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.0...v0.14.1)
+
+**Implemented enhancements:**
+
+- CI: Use "auto-dist-tag" for deployment [\#200](https://github.com/ember-cli/ember-cli-mocha/pull/200) ([Turbo87](https://github.com/Turbo87))
+
+**Fixed bugs:**
+
+- whitelist files to publish to npm [\#199](https://github.com/ember-cli/ember-cli-mocha/pull/199) ([kturney](https://github.com/kturney))
+
 ## [v0.14.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.0) (2017-04-28)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.3...v0.14.0)
 
