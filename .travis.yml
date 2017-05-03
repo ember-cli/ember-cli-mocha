@@ -36,6 +36,10 @@ install:
 script:
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
 
+before_deploy:
+  - npm install -g auto-dist-tag
+  - auto-dist-tag --write
+
 deploy:
   provider: npm
   email: stefan.penner+ember-cli@gmail.com
