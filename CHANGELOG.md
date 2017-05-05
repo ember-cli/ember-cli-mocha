@@ -1,5 +1,21 @@
 # Change Log
 
+## [v0.14.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.2) (2017-05-05)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.1...v0.14.2)
+
+**Fixed bugs:**
+
+- .node\_modules from ember-try included in publish of 0.14.0 [\#198](https://github.com/ember-cli/ember-cli-mocha/issues/198)
+
+**Closed issues:**
+
+- An in-range update of ember-cli-eslint is breaking the build 🚨 [\#201](https://github.com/ember-cli/ember-cli-mocha/issues/201)
+
+**Merged pull requests:**
+
+- Update ember-cli-chai to the latest version 🚀 [\#203](https://github.com/ember-cli/ember-cli-mocha/pull/203) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- ember-cli-build: Explicitly specify "testGenerator" for ESLint [\#202](https://github.com/ember-cli/ember-cli-mocha/pull/202) ([Turbo87](https://github.com/Turbo87))
+
 ## [v0.14.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.1) (2017-05-03)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.0...v0.14.1)
 
