@@ -12,7 +12,7 @@ module.exports = {
   afterInstall: function() {
     var addonContext = this;
 
-    return addonContext.addPackageToProject('ember-cli-chai', '^0.3.0').then(function() {
+    return addonContext.addPackageToProject('ember-cli-chai', '^0.4.0').then(function() {
       if ('removePackageFromProject' in addonContext) {
         return addonContext.removePackageFromProject('ember-cli-qunit');
       }
