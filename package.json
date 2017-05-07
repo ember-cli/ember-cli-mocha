@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-mocha",
-  "version": "0.14.2",
+  "version": "0.14.3",
   "description": "Mocha and Chai tests for ember-cli applications",
   "files": [
     "blueprints/",
