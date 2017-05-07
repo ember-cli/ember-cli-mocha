@@ -1,5 +1,16 @@
 # Change Log
 
+## [v0.14.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.3) (2017-05-07)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.2...v0.14.3)
+
+**Fixed bugs:**
+
+- Update "ember-mocha" to v0.11.1 [\#205](https://github.com/ember-cli/ember-cli-mocha/pull/205) ([Turbo87](https://github.com/Turbo87))
+
+**Closed issues:**
+
+- ember-test-helpers throws error after upgrade [\#204](https://github.com/ember-cli/ember-cli-mocha/issues/204)
+
 ## [v0.14.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.2) (2017-05-05)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.1...v0.14.2)
 
