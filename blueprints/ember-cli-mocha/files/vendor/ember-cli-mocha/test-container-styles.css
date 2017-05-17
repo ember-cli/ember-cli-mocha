@@ -1,0 +1,175 @@
+/*
+ * A Mocha reporter meant to be used with ember-cli-mocha and ember-cli-blanket
+ *
+ * Based on Edward Faulnker's better-mocha-html-reporter:
+ * <https://github.com/ef4/better-mocha-html-reporter>
+ */
+
+body {
+  overflow: auto;
+}
+
+#ember-testing-container {
+    position: fixed;
+    background: white;
+    bottom: 0;
+    right: -620px;
+    width: 640px;
+    height: 384px;
+    z-index: 101;
+    border: 1px solid #ccc;
+    transition: right 500ms;
+    overflow: hidden;
+}
+#ember-testing-container:hover {
+    right: 0;
+}
+#ember-testing {
+    zoom: 50%;
+    height: 100%;
+}
+#mocha {
+    margin: 60px 50px 15px 50px;
+}
+#mocha #test-title {
+    font-size: 1em;
+}
+#mocha h1 {
+    padding: 0;
+    font-size: 0.75em;
+}
+#mocha .suite .suite h1 {
+  margin-top: 0;
+  font-size: 0.75em;
+}
+#mocha h2 {
+    margin: 0;
+    padding: 0;
+}
+#mocha-stats li {
+    padding-top: 15px;
+}
+#mocha-stats em {
+    color: #ff2c00;
+}
+#mocha-stats .progress {
+    height: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#mocha-stats input {
+    display: inline-block;
+}
+#mocha-stats canvas {
+    height: 36px;
+    width: 28px;
+}
+#mocha-report.hide-passed .suite.pass {
+    display: none;
+}
+#mocha-report.hide-passed .test.pass {
+    display: none;
+}
+
+#mocha .test a.replay {
+    display: inline-block;
+    position: static;
+    margin-left: 0.5em;
+}
+
+#mocha-stats {
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+#mocha-stats.sad {
+    background-color: #FFC8DF;
+}
+
+#mocha-stats.happy {
+    background-color: #C0FFC1;
+}
+
+#mocha .suite .dump {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div #blanket-main {
+    background: transparent;
+    color: black;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-left: 50px;
+    line-height: 1.5;
+}
+
+div #blanket-main a {
+    color: black;
+}
+
+div #blanket-main > div {
+    margin-left: 15px;
+    border: 0;
+    padding: 0;
+}
+
+div #blanket-main .bl-title {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+div #blanket-main > div:not(.bl-title) {
+    margin-left: 30px;
+}
+
+div #blanket-main .bl-success {
+    color: #00d6b2;
+}
+
+div #blanket-main .bl-nb {
+    color: black;
+}
+
+div #blanket-main .grand-total > div:first-of-type {
+    color: black;
+}
+
+div #blanket-main .bl-success::before {
+    content: '✓';
+    font-size: 12px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    color: #00d6b2;
+}
+
+div #blanket-main .bl-error::before {
+    content: '✖';
+    font-size: 12px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    color: #c00;
+}
+
+#blanket-main.hide-passed .bl-success {
+    display: none;
+}
+
+div #blanket-main .bl-error a {
+    color: #c00;
+}
+
+#blanket-main .bl-source {
+    font-size: 12px;
+}
+
+#blanket-main .bl-source .miss {
+    background-color: #FFC8DF;
+}
+
+#blanket-main .bl-source span {
+    text-align: right;
+}
