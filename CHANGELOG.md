@@ -1,5 +1,25 @@
 # Change Log
 
+## [v0.14.4](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.4) (2017-05-27)
+[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.3...v0.14.4)
+
+**Implemented enhancements:**
+
+- Filter out JSHint specs [\#70](https://github.com/ember-cli/ember-cli-mocha/issues/70)
+- Consider setting expr:true in tests/.jshintrc to avoid chai warnings [\#6](https://github.com/ember-cli/ember-cli-mocha/issues/6)
+- Update "ember-mocha" and locked dependencies [\#211](https://github.com/ember-cli/ember-cli-mocha/pull/211) ([Turbo87](https://github.com/Turbo87))
+- Add "yarn.lock" file [\#206](https://github.com/ember-cli/ember-cli-mocha/pull/206) ([Turbo87](https://github.com/Turbo87))
+
+**Fixed bugs:**
+
+- Running tests gives error "Can't find variable: QUnit" [\#127](https://github.com/ember-cli/ember-cli-mocha/issues/127)
+
+**Merged pull requests:**
+
+- chore\(package\): update ember-cli to version 2.13.2 [\#210](https://github.com/ember-cli/ember-cli-mocha/pull/210) ([Turbo87](https://github.com/Turbo87))
+- chore\(package\): update ember-cli-htmlbars to version 2.0.1 [\#209](https://github.com/ember-cli/ember-cli-mocha/pull/209) ([Turbo87](https://github.com/Turbo87))
+- Update ember-cli-dependency-checker to the latest version 🚀 [\#208](https://github.com/ember-cli/ember-cli-mocha/pull/208) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v0.14.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.3) (2017-05-07)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.2...v0.14.3)
 
@@ -24,7 +44,7 @@
 
 **Merged pull requests:**
 
-- Update ember-cli-chai to the latest version 🚀 [\#203](https://github.com/ember-cli/ember-cli-mocha/pull/203) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-cli-chai to the latest version 🚀 [\#203](https://github.com/ember-cli/ember-cli-mocha/pull/203) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 - ember-cli-build: Explicitly specify "testGenerator" for ESLint [\#202](https://github.com/ember-cli/ember-cli-mocha/pull/202) ([Turbo87](https://github.com/Turbo87))
 
 ## [v0.14.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.1) (2017-05-03)
@@ -54,10 +74,10 @@
 **Merged pull requests:**
 
 - chore\(package\): update ember-cli to version 2.12.2 [\#195](https://github.com/ember-cli/ember-cli-mocha/pull/195) ([Turbo87](https://github.com/Turbo87))
-- Update ember-source to the latest version 🚀 [\#194](https://github.com/ember-cli/ember-cli-mocha/pull/194) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-cli-babel to the latest version 🚀 [\#191](https://github.com/ember-cli/ember-cli-mocha/pull/191) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-resolver to the latest version 🚀 [\#185](https://github.com/ember-cli/ember-cli-mocha/pull/185) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-cli-eslint to the latest version 🚀 [\#184](https://github.com/ember-cli/ember-cli-mocha/pull/184) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-source to the latest version 🚀 [\#194](https://github.com/ember-cli/ember-cli-mocha/pull/194) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli-babel to the latest version 🚀 [\#191](https://github.com/ember-cli/ember-cli-mocha/pull/191) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-resolver to the latest version 🚀 [\#185](https://github.com/ember-cli/ember-cli-mocha/pull/185) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli-eslint to the latest version 🚀 [\#184](https://github.com/ember-cli/ember-cli-mocha/pull/184) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
 ## [v0.13.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.3) (2017-04-21)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.2...v0.13.3)
@@ -76,15 +96,15 @@
 
 **Merged pull requests:**
 
-- Update ember-cli-test-loader to the latest version 🚀 [\#187](https://github.com/ember-cli/ember-cli-mocha/pull/187) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-load-initializers to the latest version 🚀 [\#186](https://github.com/ember-cli/ember-cli-mocha/pull/186) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-source to the latest version 🚀 [\#180](https://github.com/ember-cli/ember-cli-mocha/pull/180) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-resolver to the latest version 🚀 [\#179](https://github.com/ember-cli/ember-cli-mocha/pull/179) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update broccoli-merge-trees to the latest version 🚀 [\#178](https://github.com/ember-cli/ember-cli-mocha/pull/178) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-cli-test-loader to the latest version 🚀 [\#187](https://github.com/ember-cli/ember-cli-mocha/pull/187) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-load-initializers to the latest version 🚀 [\#186](https://github.com/ember-cli/ember-cli-mocha/pull/186) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-source to the latest version 🚀 [\#180](https://github.com/ember-cli/ember-cli-mocha/pull/180) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-resolver to the latest version 🚀 [\#179](https://github.com/ember-cli/ember-cli-mocha/pull/179) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update broccoli-merge-trees to the latest version 🚀 [\#178](https://github.com/ember-cli/ember-cli-mocha/pull/178) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 - Add emberobserver.com badge [\#177](https://github.com/ember-cli/ember-cli-mocha/pull/177) ([simonihmig](https://github.com/simonihmig))
 - Add npm badge [\#176](https://github.com/ember-cli/ember-cli-mocha/pull/176) ([simonihmig](https://github.com/simonihmig))
 - Add Travis badge [\#175](https://github.com/ember-cli/ember-cli-mocha/pull/175) ([simonihmig](https://github.com/simonihmig))
-- Update ember-cli to the latest version 🚀 [\#171](https://github.com/ember-cli/ember-cli-mocha/pull/171) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-cli to the latest version 🚀 [\#171](https://github.com/ember-cli/ember-cli-mocha/pull/171) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 - fix\(package\): update broccoli-concat to version 3.1.1 [\#169](https://github.com/ember-cli/ember-cli-mocha/pull/169) ([rwjblue](https://github.com/rwjblue))
 
 ## [v0.13.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.2) (2017-01-29)
@@ -97,8 +117,8 @@
 **Merged pull requests:**
 
 - CI: Switch NPM deploy user to "ember-cli" [\#163](https://github.com/ember-cli/ember-cli-mocha/pull/163) ([Turbo87](https://github.com/Turbo87))
-- Update ember-cli-eslint to the latest version 🚀 [\#161](https://github.com/ember-cli/ember-cli-mocha/pull/161) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-cli-eslint to the latest version 🚀 [\#160](https://github.com/ember-cli/ember-cli-mocha/pull/160) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-cli-eslint to the latest version 🚀 [\#161](https://github.com/ember-cli/ember-cli-mocha/pull/161) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli-eslint to the latest version 🚀 [\#160](https://github.com/ember-cli/ember-cli-mocha/pull/160) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
 ## [v0.13.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.1) (2016-12-09)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.0...v0.13.1)
@@ -116,11 +136,11 @@
 
 **Merged pull requests:**
 
-- Update ember-mocha to the latest version 🚀 [\#157](https://github.com/ember-cli/ember-cli-mocha/pull/157) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-cli-chai to the latest version 🚀 [\#153](https://github.com/ember-cli/ember-cli-mocha/pull/153) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-load-initializers to the latest version 🚀 [\#150](https://github.com/ember-cli/ember-cli-mocha/pull/150) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-cli to the latest version 🚀 [\#149](https://github.com/ember-cli/ember-cli-mocha/pull/149) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
-- Update ember-mocha to the latest version 🚀 [\#148](https://github.com/ember-cli/ember-cli-mocha/pull/148) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update ember-mocha to the latest version 🚀 [\#157](https://github.com/ember-cli/ember-cli-mocha/pull/157) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli-chai to the latest version 🚀 [\#153](https://github.com/ember-cli/ember-cli-mocha/pull/153) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-load-initializers to the latest version 🚀 [\#150](https://github.com/ember-cli/ember-cli-mocha/pull/150) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli to the latest version 🚀 [\#149](https://github.com/ember-cli/ember-cli-mocha/pull/149) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-mocha to the latest version 🚀 [\#148](https://github.com/ember-cli/ember-cli-mocha/pull/148) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
 ## [v0.13.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.0) (2016-11-28)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.12.1...v0.13.0)
@@ -135,7 +155,7 @@
 
 **Merged pull requests:**
 
-- Update dependencies to enable Greenkeeper 🌴 [\#137](https://github.com/ember-cli/ember-cli-mocha/pull/137) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update dependencies to enable Greenkeeper 🌴 [\#137](https://github.com/ember-cli/ember-cli-mocha/pull/137) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
 ## [v0.12.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.12.1) (2016-11-27)
 [Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.12.0...v0.12.1)
