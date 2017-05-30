@@ -9,7 +9,7 @@ var Funnel = require('broccoli-funnel');
 var resolve = require('resolve');
 
 module.exports = {
-  name: 'Ember CLI Mocha',
+  name: 'ember-cli-mocha',
 
   overrideTestCommandFilter: function() {
     var TestCommand = this.project.require('ember-cli/lib/commands/test');
