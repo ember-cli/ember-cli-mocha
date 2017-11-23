@@ -1,22 +1,22 @@
 /* globals describe, it, mocha, require, requirejs */
 
 document.addEventListener(
-  "DOMContentLoaded",
+  'DOMContentLoaded',
   function() {
-    var testLoaderModulePath = "ember-cli-test-loader/test-support/index";
+    var testLoaderModulePath = 'ember-cli-test-loader/test-support/index';
 
     if (!requirejs.entries[testLoaderModulePath]) {
-      testLoaderModulePath = "ember-cli/test-loader";
+      testLoaderModulePath = 'ember-cli/test-loader';
     }
 
-    var TestLoader = require(testLoaderModulePath)["default"];
+    var TestLoader = require(testLoaderModulePath)['default'];
     TestLoader.prototype.shouldLoadModule = function(moduleName) {
       return moduleName.match(/[-_]test$/) || moduleName.match(/\.jshint$/);
     };
 
     TestLoader.prototype.moduleLoadFailure = function(moduleName, error) {
-      describe("TestLoader Failures", function() {
-        it(moduleName + ": could not be loaded", function() {
+      describe('TestLoader Failures', function() {
+        it(moduleName + ': could not be loaded', function() {
           throw error;
         });
       });
