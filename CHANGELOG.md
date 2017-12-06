@@ -5,10 +5,13 @@
 #### :bug: Bug Fix
 * [#212](https://github.com/ember-cli/ember-cli-mocha/pull/212) Adjust addon "name" property. ([@Turbo87](https://github.com/Turbo87))
 
+#### :memo: Documentation
+* [#230](https://github.com/ember-cli/ember-cli-mocha/pull/230) Use `lerna-changelog` to generate friendly changelog. ([@Turbo87](https://github.com/Turbo87))
+
 #### :house: Internal
 * [#229](https://github.com/ember-cli/ember-cli-mocha/pull/229) Remove functionality to defer to `ember-mocha` API. ([@Turbo87](https://github.com/Turbo87))
 
-#### Committers: 2
+#### Committers: 1
 - Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
 
@@ -18,7 +21,7 @@
 * [#211](https://github.com/ember-cli/ember-cli-mocha/pull/211) Update "ember-mocha" and locked dependencies. ([@Turbo87](https://github.com/Turbo87))
 * [#206](https://github.com/ember-cli/ember-cli-mocha/pull/206) Add "yarn.lock" file. ([@Turbo87](https://github.com/Turbo87))
 
-#### Committers: 2
+#### Committers: 1
 - Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
 
@@ -52,7 +55,7 @@
 #### :rocket: Enhancement
 * [#196](https://github.com/ember-cli/ember-cli-mocha/pull/196) Remove unused dev dependencies. ([@Turbo87](https://github.com/Turbo87))
 
-#### Committers: 2
+#### Committers: 1
 - Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
 
@@ -66,7 +69,7 @@
 * [#176](https://github.com/ember-cli/ember-cli-mocha/pull/176) Add npm badge. ([@simonihmig](https://github.com/simonihmig))
 * [#175](https://github.com/ember-cli/ember-cli-mocha/pull/175) Add Travis badge. ([@simonihmig](https://github.com/simonihmig))
 
-#### Committers: 3
+#### Committers: 2
 - Robert Jackson ([rwjblue](https://github.com/rwjblue))
 - Simon Ihmig ([simonihmig](https://github.com/simonihmig))
 
@@ -79,7 +82,7 @@
 #### :house: Internal
 * [#163](https://github.com/ember-cli/ember-cli-mocha/pull/163) CI: Switch NPM deploy user to "ember-cli". ([@Turbo87](https://github.com/Turbo87))
 
-#### Committers: 3
+#### Committers: 2
 - Robert Jackson ([rwjblue](https://github.com/rwjblue))
 - Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
@@ -97,7 +100,7 @@
 #### :house: Internal
 * [#148](https://github.com/ember-cli/ember-cli-mocha/pull/148) Update ember-mocha to the latest version 🚀. ([@greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
-#### Committers: 2
+#### Committers: 1
 - Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
 
@@ -111,7 +114,7 @@
 #### :bug: Bug Fix
 * [#146](https://github.com/ember-cli/ember-cli-mocha/pull/146) Update "ember-mocha" to v0.9.4. ([@Turbo87](https://github.com/Turbo87))
 
-#### Committers: 2
+#### Committers: 1
 - Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
 
