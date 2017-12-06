@@ -1,545 +1,429 @@
-# Change Log
+# Changelog
 
-## [v0.14.4](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.4) (2017-05-27)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.3...v0.14.4)
+## Unreleased (2017-12-06)
 
-**Implemented enhancements:**
+#### :bug: Bug Fix
+* [#212](https://github.com/ember-cli/ember-cli-mocha/pull/212) Adjust addon "name" property. ([@Turbo87](https://github.com/Turbo87))
 
-- Filter out JSHint specs [\#70](https://github.com/ember-cli/ember-cli-mocha/issues/70)
-- Consider setting expr:true in tests/.jshintrc to avoid chai warnings [\#6](https://github.com/ember-cli/ember-cli-mocha/issues/6)
-- Update "ember-mocha" and locked dependencies [\#211](https://github.com/ember-cli/ember-cli-mocha/pull/211) ([Turbo87](https://github.com/Turbo87))
-- Add "yarn.lock" file [\#206](https://github.com/ember-cli/ember-cli-mocha/pull/206) ([Turbo87](https://github.com/Turbo87))
+#### :house: Internal
+* [#229](https://github.com/ember-cli/ember-cli-mocha/pull/229) Remove functionality to defer to `ember-mocha` API. ([@Turbo87](https://github.com/Turbo87))
 
-**Fixed bugs:**
+#### Committers: 2
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-- Running tests gives error "Can't find variable: QUnit" [\#127](https://github.com/ember-cli/ember-cli-mocha/issues/127)
 
-**Merged pull requests:**
+## v0.14.4 (2017-05-27)
 
-- chore\(package\): update ember-cli to version 2.13.2 [\#210](https://github.com/ember-cli/ember-cli-mocha/pull/210) ([Turbo87](https://github.com/Turbo87))
-- chore\(package\): update ember-cli-htmlbars to version 2.0.1 [\#209](https://github.com/ember-cli/ember-cli-mocha/pull/209) ([Turbo87](https://github.com/Turbo87))
-- Update ember-cli-dependency-checker to the latest version 🚀 [\#208](https://github.com/ember-cli/ember-cli-mocha/pull/208) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+#### :rocket: Enhancement
+* [#211](https://github.com/ember-cli/ember-cli-mocha/pull/211) Update "ember-mocha" and locked dependencies. ([@Turbo87](https://github.com/Turbo87))
+* [#206](https://github.com/ember-cli/ember-cli-mocha/pull/206) Add "yarn.lock" file. ([@Turbo87](https://github.com/Turbo87))
 
-## [v0.14.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.3) (2017-05-07)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.2...v0.14.3)
+#### Committers: 2
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-**Fixed bugs:**
 
-- Update "ember-mocha" to v0.11.1 [\#205](https://github.com/ember-cli/ember-cli-mocha/pull/205) ([Turbo87](https://github.com/Turbo87))
+## v0.14.3 (2017-05-07)
 
-**Closed issues:**
+#### :bug: Bug Fix
+* [#205](https://github.com/ember-cli/ember-cli-mocha/pull/205) Update "ember-mocha" to v0.11.1. ([@Turbo87](https://github.com/Turbo87))
 
-- ember-test-helpers throws error after upgrade [\#204](https://github.com/ember-cli/ember-cli-mocha/issues/204)
+#### Committers: 1
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-## [v0.14.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.2) (2017-05-05)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.1...v0.14.2)
 
-**Fixed bugs:**
+## v0.14.1 (2017-05-03)
 
-- .node\_modules from ember-try included in publish of 0.14.0 [\#198](https://github.com/ember-cli/ember-cli-mocha/issues/198)
+#### :rocket: Enhancement
+* [#200](https://github.com/ember-cli/ember-cli-mocha/pull/200) CI: Use "auto-dist-tag" for deployment. ([@Turbo87](https://github.com/Turbo87))
 
-**Closed issues:**
+#### :bug: Bug Fix
+* [#199](https://github.com/ember-cli/ember-cli-mocha/pull/199) whitelist files to publish to npm. ([@kturney](https://github.com/kturney))
 
-- An in-range update of ember-cli-eslint is breaking the build 🚨 [\#201](https://github.com/ember-cli/ember-cli-mocha/issues/201)
+#### Committers: 2
+- Kyle Turney ([kturney](https://github.com/kturney))
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-**Merged pull requests:**
 
-- Update ember-cli-chai to the latest version 🚀 [\#203](https://github.com/ember-cli/ember-cli-mocha/pull/203) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- ember-cli-build: Explicitly specify "testGenerator" for ESLint [\#202](https://github.com/ember-cli/ember-cli-mocha/pull/202) ([Turbo87](https://github.com/Turbo87))
+## v0.14.0 (2017-04-28)
 
-## [v0.14.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.1) (2017-05-03)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.14.0...v0.14.1)
+#### :boom: Breaking Change
+* [#191](https://github.com/ember-cli/ember-cli-mocha/pull/191) Update ember-cli-babel to the latest version 🚀. ([@greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
-**Implemented enhancements:**
+#### :rocket: Enhancement
+* [#196](https://github.com/ember-cli/ember-cli-mocha/pull/196) Remove unused dev dependencies. ([@Turbo87](https://github.com/Turbo87))
 
-- CI: Use "auto-dist-tag" for deployment [\#200](https://github.com/ember-cli/ember-cli-mocha/pull/200) ([Turbo87](https://github.com/Turbo87))
+#### Committers: 2
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-**Fixed bugs:**
 
-- whitelist files to publish to npm [\#199](https://github.com/ember-cli/ember-cli-mocha/pull/199) ([kturney](https://github.com/kturney))
+## v0.13.3 (2017-04-22)
 
-## [v0.14.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.14.0) (2017-04-28)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.3...v0.14.0)
+#### :bug: Bug Fix
+* [#190](https://github.com/ember-cli/ember-cli-mocha/pull/190) Prevent clobbering custom `this.options.babel`. ([@rwjblue](https://github.com/rwjblue))
 
-**Implemented enhancements:**
+#### :memo: Documentation
+* [#177](https://github.com/ember-cli/ember-cli-mocha/pull/177) Add emberobserver.com badge. ([@simonihmig](https://github.com/simonihmig))
+* [#176](https://github.com/ember-cli/ember-cli-mocha/pull/176) Add npm badge. ([@simonihmig](https://github.com/simonihmig))
+* [#175](https://github.com/ember-cli/ember-cli-mocha/pull/175) Add Travis badge. ([@simonihmig](https://github.com/simonihmig))
 
-- Remove unused dev dependencies [\#196](https://github.com/ember-cli/ember-cli-mocha/pull/196) ([Turbo87](https://github.com/Turbo87))
+#### Committers: 3
+- Robert Jackson ([rwjblue](https://github.com/rwjblue))
+- Simon Ihmig ([simonihmig](https://github.com/simonihmig))
 
-**Closed issues:**
 
-- An in-range update of ember-cli-version-checker is breaking the build 🚨 [\#193](https://github.com/ember-cli/ember-cli-mocha/issues/193)
-- mochas require\(\) overwrites embers require\(\) [\#141](https://github.com/ember-cli/ember-cli-mocha/issues/141)
-- Async Integration not working [\#85](https://github.com/ember-cli/ember-cli-mocha/issues/85)
+## v0.13.2 (2017-01-29)
 
-**Merged pull requests:**
+#### :rocket: Enhancement
+* [#166](https://github.com/ember-cli/ember-cli-mocha/pull/166) Make compatible with ember-cli@2.12.. ([@rwjblue](https://github.com/rwjblue))
 
-- chore\(package\): update ember-cli to version 2.12.2 [\#195](https://github.com/ember-cli/ember-cli-mocha/pull/195) ([Turbo87](https://github.com/Turbo87))
-- Update ember-source to the latest version 🚀 [\#194](https://github.com/ember-cli/ember-cli-mocha/pull/194) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-cli-babel to the latest version 🚀 [\#191](https://github.com/ember-cli/ember-cli-mocha/pull/191) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-resolver to the latest version 🚀 [\#185](https://github.com/ember-cli/ember-cli-mocha/pull/185) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-cli-eslint to the latest version 🚀 [\#184](https://github.com/ember-cli/ember-cli-mocha/pull/184) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+#### :house: Internal
+* [#163](https://github.com/ember-cli/ember-cli-mocha/pull/163) CI: Switch NPM deploy user to "ember-cli". ([@Turbo87](https://github.com/Turbo87))
 
-## [v0.13.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.3) (2017-04-21)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.2...v0.13.3)
+#### Committers: 3
+- Robert Jackson ([rwjblue](https://github.com/rwjblue))
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-**Fixed bugs:**
 
-- Not compatible with ember-cli@2.13 [\#182](https://github.com/ember-cli/ember-cli-mocha/issues/182)
-- Prevent clobbering custom `this.options.babel` [\#190](https://github.com/ember-cli/ember-cli-mocha/pull/190) ([rwjblue](https://github.com/rwjblue))
+## v0.13.1 (2016-12-09)
 
-**Closed issues:**
+#### :rocket: Enhancement
+* [#158](https://github.com/ember-cli/ember-cli-mocha/pull/158) Use "ember-mocha-adapter" from "ember-mocha" NPM package. ([@Turbo87](https://github.com/Turbo87))
+* [#156](https://github.com/ember-cli/ember-cli-mocha/pull/156) blueprints: Update auto-installed "ember-cli-chai" to v0.3.0. ([@Turbo87](https://github.com/Turbo87))
+* [#152](https://github.com/ember-cli/ember-cli-mocha/pull/152) Replace JSHint with ESLint. ([@Turbo87](https://github.com/Turbo87))
 
-- updating project to ember-cli@2.12.1 seems to fail on untranspiled ember-mocha in vendor.js [\#189](https://github.com/ember-cli/ember-cli-mocha/issues/189)
-- An in-range update of broccoli-merge-trees is breaking the build 🚨 [\#174](https://github.com/ember-cli/ember-cli-mocha/issues/174)
-- An in-range update of loader.js is breaking the build 🚨 [\#173](https://github.com/ember-cli/ember-cli-mocha/issues/173)
-- An in-range update of broccoli-concat is breaking the build 🚨 [\#172](https://github.com/ember-cli/ember-cli-mocha/issues/172)
+#### :bug: Bug Fix
+* [#155](https://github.com/ember-cli/ember-cli-mocha/pull/155) CI: Fix path to "ember" executable. ([@Turbo87](https://github.com/Turbo87))
 
-**Merged pull requests:**
+#### :house: Internal
+* [#148](https://github.com/ember-cli/ember-cli-mocha/pull/148) Update ember-mocha to the latest version 🚀. ([@greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
-- Update ember-cli-test-loader to the latest version 🚀 [\#187](https://github.com/ember-cli/ember-cli-mocha/pull/187) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-load-initializers to the latest version 🚀 [\#186](https://github.com/ember-cli/ember-cli-mocha/pull/186) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-source to the latest version 🚀 [\#180](https://github.com/ember-cli/ember-cli-mocha/pull/180) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-resolver to the latest version 🚀 [\#179](https://github.com/ember-cli/ember-cli-mocha/pull/179) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update broccoli-merge-trees to the latest version 🚀 [\#178](https://github.com/ember-cli/ember-cli-mocha/pull/178) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Add emberobserver.com badge [\#177](https://github.com/ember-cli/ember-cli-mocha/pull/177) ([simonihmig](https://github.com/simonihmig))
-- Add npm badge [\#176](https://github.com/ember-cli/ember-cli-mocha/pull/176) ([simonihmig](https://github.com/simonihmig))
-- Add Travis badge [\#175](https://github.com/ember-cli/ember-cli-mocha/pull/175) ([simonihmig](https://github.com/simonihmig))
-- Update ember-cli to the latest version 🚀 [\#171](https://github.com/ember-cli/ember-cli-mocha/pull/171) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- fix\(package\): update broccoli-concat to version 3.1.1 [\#169](https://github.com/ember-cli/ember-cli-mocha/pull/169) ([rwjblue](https://github.com/rwjblue))
+#### Committers: 2
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-## [v0.13.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.2) (2017-01-29)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.1...v0.13.2)
 
-**Implemented enhancements:**
+## v0.12.1 (2016-11-27)
 
-- Make compatible with ember-cli@2.12. [\#166](https://github.com/ember-cli/ember-cli-mocha/pull/166) ([rwjblue](https://github.com/rwjblue))
+#### :rocket: Enhancement
+* [#145](https://github.com/ember-cli/ember-cli-mocha/pull/145) CI: Publish tags to NPM. ([@Turbo87](https://github.com/Turbo87))
+* [#144](https://github.com/ember-cli/ember-cli-mocha/pull/144) Add "ember-cli-chai" to project instead of making it a dependency. ([@Turbo87](https://github.com/Turbo87))
+* [#143](https://github.com/ember-cli/ember-cli-mocha/pull/143) Split "chai" code into "ember-cli-chai" addon. ([@Turbo87](https://github.com/Turbo87))
 
-**Merged pull requests:**
+#### :bug: Bug Fix
+* [#146](https://github.com/ember-cli/ember-cli-mocha/pull/146) Update "ember-mocha" to v0.9.4. ([@Turbo87](https://github.com/Turbo87))
 
-- CI: Switch NPM deploy user to "ember-cli" [\#163](https://github.com/ember-cli/ember-cli-mocha/pull/163) ([Turbo87](https://github.com/Turbo87))
-- Update ember-cli-eslint to the latest version 🚀 [\#161](https://github.com/ember-cli/ember-cli-mocha/pull/161) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-cli-eslint to the latest version 🚀 [\#160](https://github.com/ember-cli/ember-cli-mocha/pull/160) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+#### Committers: 2
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-## [v0.13.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.1) (2016-12-09)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.13.0...v0.13.1)
 
-**Implemented enhancements:**
+## v0.12.0 (2016-11-23)
 
-- Update blueprints [\#142](https://github.com/ember-cli/ember-cli-mocha/issues/142)
-- Use "ember-mocha-adapter" from "ember-mocha" NPM package [\#158](https://github.com/ember-cli/ember-cli-mocha/pull/158) ([Turbo87](https://github.com/Turbo87))
-- blueprints: Update auto-installed "ember-cli-chai" to v0.3.0 [\#156](https://github.com/ember-cli/ember-cli-mocha/pull/156) ([Turbo87](https://github.com/Turbo87))
-- Replace JSHint with ESLint [\#152](https://github.com/ember-cli/ember-cli-mocha/pull/152) ([Turbo87](https://github.com/Turbo87))
+#### :rocket: Enhancement
+* [#133](https://github.com/ember-cli/ember-cli-mocha/pull/133) Update "ember-mocha" to v0.9.x. ([@Turbo87](https://github.com/Turbo87))
 
-**Fixed bugs:**
+#### :bug: Bug Fix
+* [#135](https://github.com/ember-cli/ember-cli-mocha/pull/135) Fix broken test-loader test. ([@Turbo87](https://github.com/Turbo87))
 
-- CI: Fix path to "ember" executable [\#155](https://github.com/ember-cli/ember-cli-mocha/pull/155) ([Turbo87](https://github.com/Turbo87))
+#### :house: Internal
+* [#139](https://github.com/ember-cli/ember-cli-mocha/pull/139) ember-cli 2.9. ([@Dhaulagiri](https://github.com/Dhaulagiri))
+* [#138](https://github.com/ember-cli/ember-cli-mocha/pull/138) Remove unused dependencies. ([@Turbo87](https://github.com/Turbo87))
+* [#136](https://github.com/ember-cli/ember-cli-mocha/pull/136) Cleanup package.json. ([@Turbo87](https://github.com/Turbo87))
 
-**Merged pull requests:**
+#### Committers: 2
+- Brian Runnells ([Dhaulagiri](https://github.com/Dhaulagiri))
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-- Update ember-mocha to the latest version 🚀 [\#157](https://github.com/ember-cli/ember-cli-mocha/pull/157) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-cli-chai to the latest version 🚀 [\#153](https://github.com/ember-cli/ember-cli-mocha/pull/153) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-load-initializers to the latest version 🚀 [\#150](https://github.com/ember-cli/ember-cli-mocha/pull/150) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-cli to the latest version 🚀 [\#149](https://github.com/ember-cli/ember-cli-mocha/pull/149) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Update ember-mocha to the latest version 🚀 [\#148](https://github.com/ember-cli/ember-cli-mocha/pull/148) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 
-## [v0.13.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.13.0) (2016-11-28)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.12.1...v0.13.0)
+## v0.11.0 (2016-11-10)
 
-**Implemented enhancements:**
+#### :boom: Breaking Change
+* [#123](https://github.com/ember-cli/ember-cli-mocha/pull/123) Remove blueprints. ([@Turbo87](https://github.com/Turbo87))
 
-- Split "chai" code into ember-cli-chai  [\#132](https://github.com/ember-cli/ember-cli-mocha/issues/132)
-- Remove dep on ember-cli-shims [\#131](https://github.com/ember-cli/ember-cli-mocha/issues/131)
-- Add "ember-cli-chai" to project instead of making it a dependency [\#144](https://github.com/ember-cli/ember-cli-mocha/pull/144) ([Turbo87](https://github.com/Turbo87))
-- Split "chai" code into "ember-cli-chai" addon [\#143](https://github.com/ember-cli/ember-cli-mocha/pull/143) ([Turbo87](https://github.com/Turbo87))
-- Remove unused/empty `ember-cli-shims` [\#134](https://github.com/ember-cli/ember-cli-mocha/pull/134) ([alexlafroscia](https://github.com/alexlafroscia))
+#### :rocket: Enhancement
+* [#129](https://github.com/ember-cli/ember-cli-mocha/pull/129) Replace `ember-cli-test-loader` Bower with NPM dependency. ([@alexlafroscia](https://github.com/alexlafroscia))
+* [#118](https://github.com/ember-cli/ember-cli-mocha/pull/118) avoid writing jshint ignore in blueprint tests if jshint is not detected. ([@philtobias](https://github.com/philtobias))
+* [#124](https://github.com/ember-cli/ember-cli-mocha/pull/124) Load Mocha and Chai from NPM. ([@Turbo87](https://github.com/Turbo87))
+* [#125](https://github.com/ember-cli/ember-cli-mocha/pull/125) Improved test generator output. ([@Turbo87](https://github.com/Turbo87))
+* [#107](https://github.com/ember-cli/ember-cli-mocha/pull/107) Remove JSHint lintTree. ([@Turbo87](https://github.com/Turbo87))
+* [#109](https://github.com/ember-cli/ember-cli-mocha/pull/109) Use absolute path in acceptance test blueprints. ([@Dhaulagiri](https://github.com/Dhaulagiri))
+* [#110](https://github.com/ember-cli/ember-cli-mocha/pull/110) Add destroy step to instance-initializer test blueprint. ([@bttf](https://github.com/bttf))
 
-**Merged pull requests:**
+#### :memo: Documentation
+* [#126](https://github.com/ember-cli/ember-cli-mocha/pull/126) Add changelog file. ([@Turbo87](https://github.com/Turbo87))
 
-- Update dependencies to enable Greenkeeper 🌴 [\#137](https://github.com/ember-cli/ember-cli-mocha/pull/137) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+#### :house: Internal
+* [#112](https://github.com/ember-cli/ember-cli-mocha/pull/112) Add simple tests for test-loader. ([@trentmwillis](https://github.com/trentmwillis))
 
-## [v0.12.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.12.1) (2016-11-27)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.12.0...v0.12.1)
+#### Committers: 6
+- Adnan Chowdhury ([bttf](https://github.com/bttf))
+- Alex LaFroscia ([alexlafroscia](https://github.com/alexlafroscia))
+- Brian Runnells ([Dhaulagiri](https://github.com/Dhaulagiri))
+- Phil Tobias ([philtobias](https://github.com/philtobias))
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
+- Trent Willis ([trentmwillis](https://github.com/trentmwillis))
 
-**Implemented enhancements:**
 
-- CI: Publish tags to NPM [\#145](https://github.com/ember-cli/ember-cli-mocha/pull/145) ([Turbo87](https://github.com/Turbo87))
+## v0.10.4 (2016-06-15)
 
-**Fixed bugs:**
+#### :bug: Bug Fix
+* [#115](https://github.com/ember-cli/ember-cli-mocha/pull/115) Add missing _super call to init(). ([@Turbo87](https://github.com/Turbo87))
 
-- Update "ember-mocha" to v0.9.4 [\#146](https://github.com/ember-cli/ember-cli-mocha/pull/146) ([Turbo87](https://github.com/Turbo87))
+#### Committers: 1
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-## [v0.12.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.12.0) (2016-11-23)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.11.0...v0.12.0)
 
-**Implemented enhancements:**
+## v0.10.3 (2016-06-15)
 
-- Update "ember-mocha" to v0.9.x [\#133](https://github.com/ember-cli/ember-cli-mocha/pull/133) ([Turbo87](https://github.com/Turbo87))
+#### :rocket: Enhancement
+* [#111](https://github.com/ember-cli/ember-cli-mocha/pull/111) Support loading test-loader from NPM. ([@trentmwillis](https://github.com/trentmwillis))
+* [#108](https://github.com/ember-cli/ember-cli-mocha/pull/108) Add instance initializer blueprint.. ([@blimmer](https://github.com/blimmer))
 
-**Fixed bugs:**
+#### Committers: 2
+- Ben Limmer ([blimmer](https://github.com/blimmer))
+- Trent Willis ([trentmwillis](https://github.com/trentmwillis))
 
-- Fix broken test-loader test [\#135](https://github.com/ember-cli/ember-cli-mocha/pull/135) ([Turbo87](https://github.com/Turbo87))
 
-**Closed issues:**
+## v0.10.2 (2016-04-14)
 
-- Release v0.11.0 [\#128](https://github.com/ember-cli/ember-cli-mocha/issues/128)
+#### :rocket: Enhancement
+* [#106](https://github.com/ember-cli/ember-cli-mocha/pull/106) TestGenerator: Remove "expected false to be truthy" message. ([@Turbo87](https://github.com/Turbo87))
 
-**Merged pull requests:**
+#### Committers: 1
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-- ember-cli 2.9 [\#139](https://github.com/ember-cli/ember-cli-mocha/pull/139) ([Dhaulagiri](https://github.com/Dhaulagiri))
-- Remove unused dependencies [\#138](https://github.com/ember-cli/ember-cli-mocha/pull/138) ([Turbo87](https://github.com/Turbo87))
-- Cleanup package.json [\#136](https://github.com/ember-cli/ember-cli-mocha/pull/136) ([Turbo87](https://github.com/Turbo87))
 
-## [v0.11.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.11.0) (2016-11-10)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.10.4...v0.11.0)
+## v0.10.1 (2016-03-05)
 
-**Implemented enhancements:**
+#### :rocket: Enhancement
+* [#102](https://github.com/ember-cli/ember-cli-mocha/pull/102) Implement test file generator function. ([@Turbo87](https://github.com/Turbo87))
+* [#99](https://github.com/ember-cli/ember-cli-mocha/pull/99) Remove "ember-mocha" bower dependency. ([@Turbo87](https://github.com/Turbo87))
 
-- Replace `ember-cli-test-loader` Bower with NPM dependency [\#129](https://github.com/ember-cli/ember-cli-mocha/pull/129) ([alexlafroscia](https://github.com/alexlafroscia))
-- Improved test generator output [\#125](https://github.com/ember-cli/ember-cli-mocha/pull/125) ([Turbo87](https://github.com/Turbo87))
-- Load Mocha and Chai from NPM [\#124](https://github.com/ember-cli/ember-cli-mocha/pull/124) ([Turbo87](https://github.com/Turbo87))
-- Remove JSHint lintTree [\#107](https://github.com/ember-cli/ember-cli-mocha/pull/107) ([Turbo87](https://github.com/Turbo87))
+#### :bug: Bug Fix
+* [#101](https://github.com/ember-cli/ember-cli-mocha/pull/101) blueprints: Fix typo in afterInstall() method. ([@Turbo87](https://github.com/Turbo87))
 
-**Closed issues:**
+#### :memo: Documentation
+* [#104](https://github.com/ember-cli/ember-cli-mocha/pull/104) Update README.md. ([@jasonmit](https://github.com/jasonmit))
 
-- Remove ember-cli-test-loader from bower.json [\#122](https://github.com/ember-cli/ember-cli-mocha/issues/122)
-- Inconsistent test names [\#121](https://github.com/ember-cli/ember-cli-mocha/issues/121)
-- Disable JSHint "expr" rule [\#120](https://github.com/ember-cli/ember-cli-mocha/issues/120)
-- Remove "ember-qunit-notifications" from "bower.json" [\#119](https://github.com/ember-cli/ember-cli-mocha/issues/119)
-- Avoid writing JSHint ignore on generated files [\#117](https://github.com/ember-cli/ember-cli-mocha/issues/117)
-- Increase test timeout with `pauseTest\(\)` [\#114](https://github.com/ember-cli/ember-cli-mocha/issues/114)
-- Move into "ember-cli" org [\#113](https://github.com/ember-cli/ember-cli-mocha/issues/113)
-- Support for ESLint? [\#105](https://github.com/ember-cli/ember-cli-mocha/issues/105)
-- Update to pull ember-test-helpers from NPM [\#92](https://github.com/ember-cli/ember-cli-mocha/issues/92)
-- Clicking on "failures" transitions to the main app [\#90](https://github.com/ember-cli/ember-cli-mocha/issues/90)
-- mocha parallel [\#78](https://github.com/ember-cli/ember-cli-mocha/issues/78)
-- Warn when bowers deps are out of sync [\#63](https://github.com/ember-cli/ember-cli-mocha/issues/63)
-- Intent to support linting flag [\#44](https://github.com/ember-cli/ember-cli-mocha/issues/44)
+#### Committers: 3
+- Benjamin Rosas ([ballPointPenguin](https://github.com/ballPointPenguin))
+- Jason Mitchell ([jasonmit](https://github.com/jasonmit))
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
-**Merged pull requests:**
 
-- Add changelog file [\#126](https://github.com/ember-cli/ember-cli-mocha/pull/126) ([Turbo87](https://github.com/Turbo87))
-- Remove blueprints [\#123](https://github.com/ember-cli/ember-cli-mocha/pull/123) ([Turbo87](https://github.com/Turbo87))
-- avoid writing jshint ignore in blueprint tests if jshint is not detected [\#118](https://github.com/ember-cli/ember-cli-mocha/pull/118) ([philtobias](https://github.com/philtobias))
-- Add simple tests for test-loader [\#112](https://github.com/ember-cli/ember-cli-mocha/pull/112) ([trentmwillis](https://github.com/trentmwillis))
-- Add destroy step to instance-initializer test blueprint [\#110](https://github.com/ember-cli/ember-cli-mocha/pull/110) ([bttf](https://github.com/bttf))
-- Use absolute path in acceptance test blueprints [\#109](https://github.com/ember-cli/ember-cli-mocha/pull/109) ([Dhaulagiri](https://github.com/Dhaulagiri))
+## v0.10.0 (2016-02-01)
 
-## [v0.10.4](https://github.com/ember-cli/ember-cli-mocha/tree/v0.10.4) (2016-06-15)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.10.3...v0.10.4)
+#### :rocket: Enhancement
+* [#96](https://github.com/ember-cli/ember-cli-mocha/pull/96) Update to pull ember-mocha from NPM.. ([@rwjblue](https://github.com/rwjblue))
 
-**Merged pull requests:**
+#### Committers: 1
+- Robert Jackson ([rwjblue](https://github.com/rwjblue))
 
-- Add missing \_super call to init\(\) [\#115](https://github.com/ember-cli/ember-cli-mocha/pull/115) ([Turbo87](https://github.com/Turbo87))
 
-## [v0.10.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.10.3) (2016-06-15)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.10.2...v0.10.3)
+## v0.9.8 (2015-12-11)
 
-**Closed issues:**
+#### :rocket: Enhancement
+* [#91](https://github.com/ember-cli/ember-cli-mocha/pull/91) Update test blueprints to use let. ([@Dhaulagiri](https://github.com/Dhaulagiri))
 
-- Broken against ember-cli 2.7.0-beta.2 [\#116](https://github.com/ember-cli/ember-cli-mocha/issues/116)
+#### Committers: 1
+- Brian Runnells ([Dhaulagiri](https://github.com/Dhaulagiri))
 
-**Merged pull requests:**
 
-- Support loading test-loader from NPM [\#111](https://github.com/ember-cli/ember-cli-mocha/pull/111) ([trentmwillis](https://github.com/trentmwillis))
-- Add instance initializer blueprint. [\#108](https://github.com/ember-cli/ember-cli-mocha/pull/108) ([blimmer](https://github.com/blimmer))
+## v0.9.7 (2015-11-10)
 
-## [v0.10.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.10.2) (2016-04-14)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.10.1...v0.10.2)
+#### :rocket: Enhancement
+* [#89](https://github.com/ember-cli/ember-cli-mocha/pull/89) Protect against NPE in linting config.. ([@blimmer](https://github.com/blimmer))
 
-**Merged pull requests:**
+#### Committers: 1
+- Ben Limmer ([blimmer](https://github.com/blimmer))
 
-- TestGenerator: Remove "expected false to be truthy" message [\#106](https://github.com/ember-cli/ember-cli-mocha/pull/106) ([Turbo87](https://github.com/Turbo87))
 
-## [v0.10.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.10.1) (2016-03-05)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.10.0...v0.10.1)
+## v0.9.6 (2015-11-10)
 
-**Closed issues:**
+#### :rocket: Enhancement
+* [#87](https://github.com/ember-cli/ember-cli-mocha/pull/87) Allow turning off linting. ([@martndemus](https://github.com/martndemus))
 
-- \[Question\]: how to exclude the vendor/test-loader.js file in my broccoli builds? [\#100](https://github.com/ember-cli/ember-cli-mocha/issues/100)
-- qunit blueprints [\#98](https://github.com/ember-cli/ember-cli-mocha/issues/98)
-- Tests fail to load with latest version of a newly generated addon from ember-cli\#master [\#93](https://github.com/ember-cli/ember-cli-mocha/issues/93)
+#### Committers: 1
+- Marten ([martndemus](https://github.com/martndemus))
 
-**Merged pull requests:**
 
-- Update README.md [\#104](https://github.com/ember-cli/ember-cli-mocha/pull/104) ([jasonmit](https://github.com/jasonmit))
-- Revert PR \#97 [\#103](https://github.com/ember-cli/ember-cli-mocha/pull/103) ([Turbo87](https://github.com/Turbo87))
-- Implement test file generator function [\#102](https://github.com/ember-cli/ember-cli-mocha/pull/102) ([Turbo87](https://github.com/Turbo87))
-- blueprints: Fix typo in afterInstall\(\) method [\#101](https://github.com/ember-cli/ember-cli-mocha/pull/101) ([Turbo87](https://github.com/Turbo87))
-- Remove "ember-mocha" bower dependency [\#99](https://github.com/ember-cli/ember-cli-mocha/pull/99) ([Turbo87](https://github.com/Turbo87))
-- fix bower packages in blueprints [\#97](https://github.com/ember-cli/ember-cli-mocha/pull/97) ([ballPointPenguin](https://github.com/ballPointPenguin))
+## v0.9.5 (2015-11-09)
 
-## [v0.10.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.10.0) (2016-02-01)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.9.8...v0.10.0)
+#### :rocket: Enhancement
+* [#82](https://github.com/ember-cli/ember-cli-mocha/pull/82) Utilize new destroy-app.js when present.. ([@blimmer](https://github.com/blimmer))
 
-**Closed issues:**
+#### Committers: 1
+- Ben Limmer ([blimmer](https://github.com/blimmer))
 
-- \[ember-cli 2.2.0-beta.1\] mocha.setup is not a function [\#94](https://github.com/ember-cli/ember-cli-mocha/issues/94)
 
-**Merged pull requests:**
+## v0.9.4 (2015-11-08)
 
-- Update to pull ember-mocha from NPM. [\#96](https://github.com/ember-cli/ember-cli-mocha/pull/96) ([rwjblue](https://github.com/rwjblue))
+#### :rocket: Enhancement
+* [#86](https://github.com/ember-cli/ember-cli-mocha/pull/86) Upgrade broccoli-jshint to take advantage of broccoli-persistent-filter. ([@johnnyshields](https://github.com/johnnyshields))
+* [#84](https://github.com/ember-cli/ember-cli-mocha/pull/84) Add support for query option in test command. ([@trentmwillis](https://github.com/trentmwillis))
 
-## [v0.9.8](https://github.com/ember-cli/ember-cli-mocha/tree/v0.9.8) (2015-12-11)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.9.7...v0.9.8)
+#### Committers: 2
+- Johnny Shields ([johnnyshields](https://github.com/johnnyshields))
+- Trent Willis ([trentmwillis](https://github.com/trentmwillis))
 
-**Merged pull requests:**
 
-- Update test blueprints to use let [\#91](https://github.com/ember-cli/ember-cli-mocha/pull/91) ([Dhaulagiri](https://github.com/Dhaulagiri))
+## v0.9.3 (2015-09-10)
 
-## [v0.9.7](https://github.com/ember-cli/ember-cli-mocha/tree/v0.9.7) (2015-11-10)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.9.6...v0.9.7)
+#### :rocket: Enhancement
+* [#79](https://github.com/ember-cli/ember-cli-mocha/pull/79) Utilize lodash blueprint vs. string building.. ([@blimmer](https://github.com/blimmer))
+* [#75](https://github.com/ember-cli/ember-cli-mocha/pull/75) Remove trailing whitespace from blueprint. ([@HeroicEric](https://github.com/HeroicEric))
 
-**Closed issues:**
+#### Committers: 2
+- Ben Limmer ([blimmer](https://github.com/blimmer))
+- Eric Kelly ([HeroicEric](https://github.com/HeroicEric))
 
-- Ability to turn off linting broke running tests [\#88](https://github.com/ember-cli/ember-cli-mocha/issues/88)
 
-**Merged pull requests:**
+## v0.9.2 (2015-08-05)
 
-- Protect against NPE in linting config. [\#89](https://github.com/ember-cli/ember-cli-mocha/pull/89) ([blimmer](https://github.com/blimmer))
+#### :bug: Bug Fix
+* [#69](https://github.com/ember-cli/ember-cli-mocha/pull/69) Fix bower install. ([@blimmer](https://github.com/blimmer))
 
-## [v0.9.6](https://github.com/ember-cli/ember-cli-mocha/tree/v0.9.6) (2015-11-10)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.9.5...v0.9.6)
+#### Committers: 1
+- Ben Limmer ([blimmer](https://github.com/blimmer))
 
-**Merged pull requests:**
 
-- Allow turning off linting [\#87](https://github.com/ember-cli/ember-cli-mocha/pull/87) ([martndemus](https://github.com/martndemus))
+## v0.9.1 (2015-07-13)
 
-## [v0.9.5](https://github.com/ember-cli/ember-cli-mocha/tree/v0.9.5) (2015-11-09)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.9.4...v0.9.5)
+#### :bug: Bug Fix
+* [#65](https://github.com/ember-cli/ember-cli-mocha/pull/65) Fix compatibility with Ember CLI 0.2.7. ([@blimmer](https://github.com/blimmer))
 
-**Merged pull requests:**
+#### Committers: 1
+- Ben Limmer ([blimmer](https://github.com/blimmer))
 
-- Utilize new destroy-app.js when present. [\#82](https://github.com/ember-cli/ember-cli-mocha/pull/82) ([blimmer](https://github.com/blimmer))
 
-## [v0.9.4](https://github.com/ember-cli/ember-cli-mocha/tree/v0.9.4) (2015-11-08)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.9.3...v0.9.4)
+## v0.9.0 (2015-07-09)
 
-**Closed issues:**
+#### :rocket: Enhancement
+* [#64](https://github.com/ember-cli/ember-cli-mocha/pull/64) Generate a component integration test by default.. ([@blimmer](https://github.com/blimmer))
 
-- If using ES6 backtick strings for `modulePrefix`, the install fails [\#83](https://github.com/ember-cli/ember-cli-mocha/issues/83)
-- Use `describe` to group tests [\#76](https://github.com/ember-cli/ember-cli-mocha/issues/76)
-- dependancy on ember-cli-shim [\#72](https://github.com/ember-cli/ember-cli-mocha/issues/72)
-- unable to find suitable version for ember-mocha? [\#59](https://github.com/ember-cli/ember-cli-mocha/issues/59)
+#### Committers: 1
+- Ben Limmer ([blimmer](https://github.com/blimmer))
 
-**Merged pull requests:**
 
-- Upgrade broccoli-jshint to take advantage of broccoli-persistent-filter [\#86](https://github.com/ember-cli/ember-cli-mocha/pull/86) ([johnnyshields](https://github.com/johnnyshields))
-- Add support for query option in test command [\#84](https://github.com/ember-cli/ember-cli-mocha/pull/84) ([trentmwillis](https://github.com/trentmwillis))
+## v0.8.0 (2015-06-19)
 
-## [v0.9.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.9.3) (2015-09-10)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.9.2...v0.9.3)
+#### :rocket: Enhancement
+* [#57](https://github.com/ember-cli/ember-cli-mocha/pull/57) Allow generation of a component integration test.. ([@blimmer](https://github.com/blimmer))
+* [#49](https://github.com/ember-cli/ember-cli-mocha/pull/49) Use Ember.Application's container in initializers blueprint. ([@VasylMarchuk](https://github.com/VasylMarchuk))
+* [#50](https://github.com/ember-cli/ember-cli-mocha/pull/50) Rename App to application and move it inside describe. ([@VasylMarchuk](https://github.com/VasylMarchuk))
+* [#54](https://github.com/ember-cli/ember-cli-mocha/pull/54) Expose the mocha runner. ([@johanneswuerbach](https://github.com/johanneswuerbach))
+* [#47](https://github.com/ember-cli/ember-cli-mocha/pull/47) Closes [#46](https://github.com/ember-cli/ember-cli-mocha/issues/46) - Warns on usage of Qunit which clashes with Mocha tests.. ([@jonathanKingston](https://github.com/jonathanKingston))
+* [#55](https://github.com/ember-cli/ember-cli-mocha/pull/55) Loosen broccoli-jshint dependency. ([@ef4](https://github.com/ef4))
 
-**Closed issues:**
+#### :bug: Bug Fix
+* [#56](https://github.com/ember-cli/ember-cli-mocha/pull/56) Suppress NPM license warning.. ([@blimmer](https://github.com/blimmer))
 
-- application start and destroy hooks stop working [\#77](https://github.com/ember-cli/ember-cli-mocha/issues/77)
+#### Committers: 5
+- Ben Limmer ([blimmer](https://github.com/blimmer))
+- Edward Faulkner ([ef4](https://github.com/ef4))
+- Johannes Würbach ([johanneswuerbach](https://github.com/johanneswuerbach))
+- Jonathan Kingston ([jonathanKingston](https://github.com/jonathanKingston))
+- Vasyl Marchuk ([VasylMarchuk](https://github.com/VasylMarchuk))
 
-**Merged pull requests:**
 
-- Utilize lodash blueprint vs. string building. [\#79](https://github.com/ember-cli/ember-cli-mocha/pull/79) ([blimmer](https://github.com/blimmer))
-- Remove trailing whitespace from blueprint [\#75](https://github.com/ember-cli/ember-cli-mocha/pull/75) ([HeroicEric](https://github.com/HeroicEric))
+## v0.6.1 (2015-05-13)
 
-## [v0.9.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.9.2) (2015-08-05)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.9.1...v0.9.2)
+#### :rocket: Enhancement
+* [#48](https://github.com/ember-cli/ember-cli-mocha/pull/48) TestCommand.availableOptions invert support. ([@blimmer](https://github.com/blimmer))
 
-**Closed issues:**
+#### Committers: 1
+- Ben Limmer ([blimmer](https://github.com/blimmer))
 
-- Install fails on Ember CLI  1.13.6 - ember-cli-test-loader not found [\#68](https://github.com/ember-cli/ember-cli-mocha/issues/68)
-- ember-cli-test-loader not found [\#67](https://github.com/ember-cli/ember-cli-mocha/issues/67)
-- Error trying to test a nested ember-cli addon [\#66](https://github.com/ember-cli/ember-cli-mocha/issues/66)
-- performance regression [\#62](https://github.com/ember-cli/ember-cli-mocha/issues/62)
 
-**Merged pull requests:**
+## v0.6.0 (2015-04-04)
 
-- Fix bower install [\#69](https://github.com/ember-cli/ember-cli-mocha/pull/69) ([blimmer](https://github.com/blimmer))
+#### :bug: Bug Fix
+* [#43](https://github.com/ember-cli/ember-cli-mocha/pull/43) Fix testing root element styles not working. ([@Soliah](https://github.com/Soliah))
 
-## [v0.9.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.9.1) (2015-07-13)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.9.0...v0.9.1)
+#### Committers: 1
+- Christopher Chow ([Soliah](https://github.com/Soliah))
 
-**Merged pull requests:**
 
-- Fix compatibility with Ember CLI 0.2.7 [\#65](https://github.com/ember-cli/ember-cli-mocha/pull/65) ([blimmer](https://github.com/blimmer))
+## v0.5.0 (2015-02-22)
 
-## [v0.9.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.9.0) (2015-07-09)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.8.0...v0.9.0)
+#### :rocket: Enhancement
+* [#42](https://github.com/ember-cli/ember-cli-mocha/pull/42) Use mocha + chai shims. ([@dgeb](https://github.com/dgeb))
 
-**Closed issues:**
+#### Committers: 1
+- Dan Gebhardt ([dgeb](https://github.com/dgeb))
 
-- Bring component integration test in line with ember-cli [\#58](https://github.com/ember-cli/ember-cli-mocha/issues/58)
 
-**Merged pull requests:**
+## v0.4.2 (2015-02-16)
 
-- Generate a component integration test by default. [\#64](https://github.com/ember-cli/ember-cli-mocha/pull/64) ([blimmer](https://github.com/blimmer))
+#### :bug: Bug Fix
+* [#36](https://github.com/ember-cli/ember-cli-mocha/pull/36) Removed lint-friendly assertion from jshint test generator. ([@slindberg](https://github.com/slindberg))
 
-## [v0.8.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.8.0) (2015-06-19)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.7.0...v0.8.0)
+#### Committers: 1
+- Steven Lindberg ([slindberg](https://github.com/slindberg))
 
-**Closed issues:**
 
-- Provide a way to access the runner [\#52](https://github.com/ember-cli/ember-cli-mocha/issues/52)
+## v0.4.1 (2015-02-16)
 
-**Merged pull requests:**
+#### :rocket: Enhancement
+* [#40](https://github.com/ember-cli/ember-cli-mocha/pull/40) Support ember-cli-test-loader to check for test inclusion issues, fixes .... ([@jonathanKingston](https://github.com/jonathanKingston))
 
-- Allow generation of a component integration test. [\#57](https://github.com/ember-cli/ember-cli-mocha/pull/57) ([blimmer](https://github.com/blimmer))
-- Suppress NPM license warning. [\#56](https://github.com/ember-cli/ember-cli-mocha/pull/56) ([blimmer](https://github.com/blimmer))
-- Loosen broccoli-jshint dependency [\#55](https://github.com/ember-cli/ember-cli-mocha/pull/55) ([ef4](https://github.com/ef4))
-- Expose the mocha runner [\#54](https://github.com/ember-cli/ember-cli-mocha/pull/54) ([johanneswuerbach](https://github.com/johanneswuerbach))
-- Rename App to application and move it inside describe [\#50](https://github.com/ember-cli/ember-cli-mocha/pull/50) ([VasylMarchuk](https://github.com/VasylMarchuk))
-- Use Ember.Application's container in initializers blueprint [\#49](https://github.com/ember-cli/ember-cli-mocha/pull/49) ([VasylMarchuk](https://github.com/VasylMarchuk))
-- fixes \#46 - Warns on usage of Qunit which clashes with Mocha tests. [\#47](https://github.com/ember-cli/ember-cli-mocha/pull/47) ([jonathanKingston](https://github.com/jonathanKingston))
+#### Committers: 1
+- Jonathan Kingston ([jonathanKingston](https://github.com/jonathanKingston))
 
-## [v0.7.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.7.0) (2015-05-14)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.6.2...v0.7.0)
 
-## [v0.6.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.6.2) (2015-05-14)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.6.1...v0.6.2)
+## v0.4.0 (2015-02-01)
 
-## [v0.6.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.6.1) (2015-05-14)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.6.0...v0.6.1)
+#### :bug: Bug Fix
+* [#33](https://github.com/ember-cli/ember-cli-mocha/pull/33) Restore ability to filter tests on command line. ([@backspace](https://github.com/backspace))
 
-**Closed issues:**
+#### Committers: 1
+- Buck Doyle ([backspace](https://github.com/backspace))
 
-- Tests not running [\#53](https://github.com/ember-cli/ember-cli-mocha/issues/53)
-- Consider better warning for using Qunit [\#46](https://github.com/ember-cli/ember-cli-mocha/issues/46)
 
-**Merged pull requests:**
+## v0.3.1 (2015-01-28)
 
-- TestCommand.availableOptions invert support [\#48](https://github.com/ember-cli/ember-cli-mocha/pull/48) ([blimmer](https://github.com/blimmer))
+#### :rocket: Enhancement
+* [#29](https://github.com/ember-cli/ember-cli-mocha/pull/29) Updates to match ember-cli-qunit 0.2.0 and 0.3.0 changes.. ([@rwjblue](https://github.com/rwjblue))
+* [#28](https://github.com/ember-cli/ember-cli-mocha/pull/28) Incorporate pod support for test blueprints. ([@DanielOchoa](https://github.com/DanielOchoa))
+* [#26](https://github.com/ember-cli/ember-cli-mocha/pull/26) Add jshinting support. ([@ef4](https://github.com/ef4))
 
-## [v0.6.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.6.0) (2015-04-04)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.5.0...v0.6.0)
+#### :bug: Bug Fix
+* [#30](https://github.com/ember-cli/ember-cli-mocha/pull/30) Use .jshintrc for the type being linted.. ([@rwjblue](https://github.com/rwjblue))
 
-**Closed issues:**
+#### Committers: 3
+- Daniel Ochoa ([DanielOchoa](https://github.com/DanielOchoa))
+- Edward Faulkner ([ef4](https://github.com/ef4))
+- Robert Jackson ([rwjblue](https://github.com/rwjblue))
 
-- Export vanilla describe, so that it doesn't have to be added to added to tests/.jshintrc manually [\#45](https://github.com/ember-cli/ember-cli-mocha/issues/45)
 
-**Merged pull requests:**
+## v0.3.0 (2015-01-25)
 
-- Fix testing root element styles not working [\#43](https://github.com/ember-cli/ember-cli-mocha/pull/43) ([Soliah](https://github.com/Soliah))
+#### :rocket: Enhancement
+* [#24](https://github.com/ember-cli/ember-cli-mocha/pull/24) Update to latest ember-cli-test-loader.. ([@rwjblue](https://github.com/rwjblue))
 
-## [v0.5.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.5.0) (2015-02-22)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.4.2...v0.5.0)
+#### :bug: Bug Fix
+* [#19](https://github.com/ember-cli/ember-cli-mocha/pull/19) Check before outputting needs in model-test. ([@backspace](https://github.com/backspace))
 
-**Closed issues:**
+#### Committers: 2
+- Buck Doyle ([backspace](https://github.com/backspace))
+- Robert Jackson ([rwjblue](https://github.com/rwjblue))
 
-- jshint error for 'describe/it not defined' on generated helper tests [\#37](https://github.com/ember-cli/ember-cli-mocha/issues/37)
 
-**Merged pull requests:**
+## v0.2.1 (2014-12-22)
 
-- Use mocha + chai shims [\#42](https://github.com/ember-cli/ember-cli-mocha/pull/42) ([dgeb](https://github.com/dgeb))
+#### :rocket: Enhancement
+* [#18](https://github.com/ember-cli/ember-cli-mocha/pull/18) Allow `ember test --filter` to perform mocha `grep`.. ([@rwjblue](https://github.com/rwjblue))
 
-## [v0.4.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.4.2) (2015-02-16)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.4.1...v0.4.2)
+#### Committers: 1
+- Robert Jackson ([rwjblue](https://github.com/rwjblue))
 
-**Merged pull requests:**
 
-- Removed lint-friendly assertion from jshint test generator [\#36](https://github.com/ember-cli/ember-cli-mocha/pull/36) ([slindberg](https://github.com/slindberg))
+## v0.2.0 (2014-12-06)
 
-## [v0.4.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.4.1) (2015-02-16)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.4.0...v0.4.1)
+#### :rocket: Enhancement
+* [#13](https://github.com/ember-cli/ember-cli-mocha/pull/13) Follow-up switchfly/ember-cli-mocha#9. ([@skyuplam](https://github.com/skyuplam))
 
-**Closed issues:**
+#### :memo: Documentation
+* [#11](https://github.com/ember-cli/ember-cli-mocha/pull/11) Describe resolution of mocha/chai conflicts. ([@clekstro](https://github.com/clekstro))
 
-- Intent to support ember-cli-test-loader [\#39](https://github.com/ember-cli/ember-cli-mocha/issues/39)
-- strange behavior with afterEach [\#32](https://github.com/ember-cli/ember-cli-mocha/issues/32)
-- Add linting via postprocessTree hook. [\#25](https://github.com/ember-cli/ember-cli-mocha/issues/25)
-- Inserts to .jshintrc didn't work. [\#21](https://github.com/ember-cli/ember-cli-mocha/issues/21)
-
-**Merged pull requests:**
-
-- Support ember-cli-test-loader to check for test inclusion issues, fixes ... [\#40](https://github.com/ember-cli/ember-cli-mocha/pull/40) ([jonathanKingston](https://github.com/jonathanKingston))
-- Attempt to mitigate sourcemap issues in Chrome. [\#34](https://github.com/ember-cli/ember-cli-mocha/pull/34) ([rwjblue](https://github.com/rwjblue))
-
-## [v0.4.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.4.0) (2015-02-01)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.3.1...v0.4.0)
-
-**Closed issues:**
-
-- module is not defined [\#31](https://github.com/ember-cli/ember-cli-mocha/issues/31)
-
-**Merged pull requests:**
-
-- Restore ability to filter tests on command line [\#33](https://github.com/ember-cli/ember-cli-mocha/pull/33) ([backspace](https://github.com/backspace))
-
-## [v0.3.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.3.1) (2015-01-28)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.3.0...v0.3.1)
-
-**Closed issues:**
-
-- Generating resources produces qunit blueprints [\#23](https://github.com/ember-cli/ember-cli-mocha/issues/23)
-- ember-cli 0.1.6+ does not start tests \[not-confirmed\] [\#22](https://github.com/ember-cli/ember-cli-mocha/issues/22)
-- Clicking a test name in the browser, Generates a wrong  URL. [\#20](https://github.com/ember-cli/ember-cli-mocha/issues/20)
-- Incorporate pod support for test blueprints [\#2](https://github.com/ember-cli/ember-cli-mocha/issues/2)
-
-**Merged pull requests:**
-
-- Use .jshintrc for the type being linted. [\#30](https://github.com/ember-cli/ember-cli-mocha/pull/30) ([rwjblue](https://github.com/rwjblue))
-- Updates to match ember-cli-qunit 0.2.0 and 0.3.0 changes. [\#29](https://github.com/ember-cli/ember-cli-mocha/pull/29) ([rwjblue](https://github.com/rwjblue))
-- Incorporate pod support for test blueprints [\#28](https://github.com/ember-cli/ember-cli-mocha/pull/28) ([DanielOchoa](https://github.com/DanielOchoa))
-- Add jshinting support [\#26](https://github.com/ember-cli/ember-cli-mocha/pull/26) ([ef4](https://github.com/ef4))
-
-## [v0.3.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.3.0) (2015-01-25)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.2.1...v0.3.0)
-
-**Closed issues:**
-
-- Generating model-test for existing model produces incorrect test-code [\#16](https://github.com/ember-cli/ember-cli-mocha/issues/16)
-- Update ember-cli-test-loader [\#5](https://github.com/ember-cli/ember-cli-mocha/issues/5)
-
-**Merged pull requests:**
-
-- Update to latest ember-cli-test-loader. [\#24](https://github.com/ember-cli/ember-cli-mocha/pull/24) ([rwjblue](https://github.com/rwjblue))
-- Check before outputting needs in model-test [\#19](https://github.com/ember-cli/ember-cli-mocha/pull/19) ([backspace](https://github.com/backspace))
-
-## [v0.2.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.2.1) (2014-12-23)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.2.0...v0.2.1)
-
-**Closed issues:**
-
-- Cannot filter tests [\#17](https://github.com/ember-cli/ember-cli-mocha/issues/17)
-- Test blueprints conflict with `ember-cli-coffeescript` [\#15](https://github.com/ember-cli/ember-cli-mocha/issues/15)
-
-**Merged pull requests:**
-
-- Allow `ember test --filter` to perform mocha `grep`. [\#18](https://github.com/ember-cli/ember-cli-mocha/pull/18) ([rwjblue](https://github.com/rwjblue))
-
-## [v0.2.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.2.0) (2014-12-06)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.1.4...v0.2.0)
-
-**Closed issues:**
-
-- CoffeeScript Support [\#12](https://github.com/ember-cli/ember-cli-mocha/issues/12)
-- Causes ember test to freeze [\#10](https://github.com/ember-cli/ember-cli-mocha/issues/10)
-- Inject fixtures via content-for [\#9](https://github.com/ember-cli/ember-cli-mocha/issues/9)
-- Usage examples [\#8](https://github.com/ember-cli/ember-cli-mocha/issues/8)
-
-**Merged pull requests:**
-
-- Follow-up switchfly/ember-cli-mocha\#9 [\#13](https://github.com/ember-cli/ember-cli-mocha/pull/13) ([skyuplam](https://github.com/skyuplam))
-- Describe resolution of mocha/chai conflicts [\#11](https://github.com/ember-cli/ember-cli-mocha/pull/11) ([clekstro](https://github.com/clekstro))
-
-## [v0.1.4](https://github.com/ember-cli/ember-cli-mocha/tree/v0.1.4) (2014-11-20)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.1.3...v0.1.4)
-
-**Closed issues:**
-
-- Help migrating to ember-cli-mocha [\#7](https://github.com/ember-cli/ember-cli-mocha/issues/7)
-- Redefinition of 'expect' [\#4](https://github.com/ember-cli/ember-cli-mocha/issues/4)
-
-## [v0.1.3](https://github.com/ember-cli/ember-cli-mocha/tree/v0.1.3) (2014-11-12)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.1.2...v0.1.3)
-
-## [v0.1.2](https://github.com/ember-cli/ember-cli-mocha/tree/v0.1.2) (2014-11-12)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.1.1...v0.1.2)
-
-**Closed issues:**
-
-- Extend tests/.jshintrc to include mocha / chai globals [\#3](https://github.com/ember-cli/ember-cli-mocha/issues/3)
-- Does not yet fulfill all my wildest wishes and dreams [\#1](https://github.com/ember-cli/ember-cli-mocha/issues/1)
-
-## [v0.1.1](https://github.com/ember-cli/ember-cli-mocha/tree/v0.1.1) (2014-11-12)
-[Full Changelog](https://github.com/ember-cli/ember-cli-mocha/compare/v0.1.0...v0.1.1)
-
-## [v0.1.0](https://github.com/ember-cli/ember-cli-mocha/tree/v0.1.0) (2014-11-12)
-
-
-\* *This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)*
+#### Committers: 2
+- Curtis Ekstrom ([clekstro](https://github.com/clekstro))
+- Terrence Lam ([skyuplam](https://github.com/skyuplam))
