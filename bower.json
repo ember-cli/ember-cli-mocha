@@ -1,6 +1,0 @@
-{
-  "name": "ember-cli-mocha",
-  "dependencies": {
-    "ember-cli-test-loader": "0.2.2"
-  }
-}
