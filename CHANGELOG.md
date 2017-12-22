@@ -1,6 +1,15 @@
 # Changelog
 
-## Unreleased (2017-12-06)
+## v0.15.0-beta.1 (2017-12-22)
+
+#### :rocket: Enhancement
+* [#235](https://github.com/ember-cli/ember-cli-mocha/pull/235) Update `ember-mocha` to v0.13.0-beta.3. ([@Turbo87](https://github.com/Turbo87))
+
+#### Committers: 1
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
+
+
+## v0.14.5-beta.1 (2017-12-06)
 
 #### :bug: Bug Fix
 * [#212](https://github.com/ember-cli/ember-cli-mocha/pull/212) Adjust addon "name" property. ([@Turbo87](https://github.com/Turbo87))
@@ -9,7 +18,7 @@
 * [#230](https://github.com/ember-cli/ember-cli-mocha/pull/230) Use `lerna-changelog` to generate friendly changelog. ([@Turbo87](https://github.com/Turbo87))
 
 #### :house: Internal
-* [#229](https://github.com/ember-cli/ember-cli-mocha/pull/229) Remove functionality to defer to `ember-mocha` API. ([@Turbo87](https://github.com/Turbo87))
+* [#229](https://github.com/ember-cli/ember-cli-mocha/pull/229) Remove functionality and defer to `ember-mocha` API. ([@Turbo87](https://github.com/Turbo87))
 
 #### Committers: 1
 - Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
