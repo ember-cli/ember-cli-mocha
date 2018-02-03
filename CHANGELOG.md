@@ -1,17 +1,21 @@
 # Changelog
 
-## Unreleased (2017-12-06)
+## v0.14.5 (2018-02-03)
 
 #### :bug: Bug Fix
+* [#239](https://github.com/ember-cli/ember-cli-mocha/pull/239) blueprints: Add `start/destroy-app` test helper files. ([@Turbo87](https://github.com/Turbo87))
+* [#237](https://github.com/ember-cli/ember-cli-mocha/pull/237) Add resolver.js back to the tests/helpers. ([@mattmarcum](https://github.com/mattmarcum))
 * [#212](https://github.com/ember-cli/ember-cli-mocha/pull/212) Adjust addon "name" property. ([@Turbo87](https://github.com/Turbo87))
 
 #### :memo: Documentation
 * [#230](https://github.com/ember-cli/ember-cli-mocha/pull/230) Use `lerna-changelog` to generate friendly changelog. ([@Turbo87](https://github.com/Turbo87))
 
 #### :house: Internal
-* [#229](https://github.com/ember-cli/ember-cli-mocha/pull/229) Remove functionality to defer to `ember-mocha` API. ([@Turbo87](https://github.com/Turbo87))
+* [#241](https://github.com/ember-cli/ember-cli-mocha/pull/241) testem: Use headless Chrome to run tests. ([@Turbo87](https://github.com/Turbo87))
+* [#238](https://github.com/ember-cli/ember-cli-mocha/pull/238) CI: Allow failures for `ember-beta`. ([@Turbo87](https://github.com/Turbo87))
 
-#### Committers: 1
+#### Committers: 2
+- Strangelooper ([mattmarcum](https://github.com/mattmarcum))
 - Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
 
 
