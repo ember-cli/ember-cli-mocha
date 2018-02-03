@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.15.0 (2018-02-03)
+
+#### :rocket: Enhancement
+* [#244](https://github.com/ember-cli/ember-cli-mocha/pull/244) Update `ember-mocha` to v0.13.0. ([@Turbo87](https://github.com/Turbo87))
+* [#229](https://github.com/ember-cli/ember-cli-mocha/pull/229) Remove functionality and defer to `ember-mocha` API. ([@Turbo87](https://github.com/Turbo87))
+* [#235](https://github.com/ember-cli/ember-cli-mocha/pull/235) Update `ember-mocha` to v0.13.0-beta.3. ([@Turbo87](https://github.com/Turbo87))
+
+#### Committers: 1
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
+
+
 ## v0.15.0-beta.1 (2017-12-22)
 
 #### :rocket: Enhancement
