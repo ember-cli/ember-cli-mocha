@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@ember/test-helpers@^0.7.10":
-  version "0.7.10"
-  resolved "https://registry.yarnpkg.com/@ember/test-helpers/-/test-helpers-0.7.10.tgz#6c083d25c6cbc9d7a1593e3336616cb47113185f"
+"@ember/test-helpers@^0.7.16":
+  version "0.7.16"
+  resolved "https://registry.yarnpkg.com/@ember/test-helpers/-/test-helpers-0.7.16.tgz#73a4acf4c7d1b92ce866f4c9e40c9723da4cf1e8"
   dependencies:
     broccoli-funnel "^2.0.1"
     ember-cli-babel "^6.10.0"
@@ -2233,11 +2233,11 @@ ember-load-initializers@^1.0.0:
   dependencies:
     ember-cli-babel "^6.0.0-beta.7"
 
-ember-mocha@^0.13.0-beta.3:
-  version "0.13.0-beta.3"
-  resolved "https://registry.yarnpkg.com/ember-mocha/-/ember-mocha-0.13.0-beta.3.tgz#116c917cfd2d1a663e92d3f5d040e439495d232c"
+ember-mocha@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/ember-mocha/-/ember-mocha-0.13.0.tgz#36732e0f8b85413bd0a97ee7060bf7c2f0196e62"
   dependencies:
-    "@ember/test-helpers" "^0.7.10"
+    "@ember/test-helpers" "^0.7.16"
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
     common-tags "^1.5.1"
