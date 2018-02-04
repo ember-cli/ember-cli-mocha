@@ -41,7 +41,7 @@ install:
   - yarn install --no-lockfile
 
 script:
-  - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+  - yarn ember try:one $EMBER_TRY_SCENARIO test
 
 before_deploy:
   - yarn global add auto-dist-tag
