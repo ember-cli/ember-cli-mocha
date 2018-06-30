@@ -1,7 +1,6 @@
 ---
 language: node_js
-node_js:
-  - "4"
+node_js: lts/carbon
 
 sudo: false
 dist: trusty
@@ -15,7 +14,6 @@ cache:
     - $HOME/.cache # includes bowers cache
 
 env:
-env:
   global:
     - DEBUG="auto-dist-tag"
   matrix:
@@ -23,6 +21,9 @@ env:
     # as well as latest stable release (bonus points to beta/canary)
     - EMBER_TRY_SCENARIO=ember-lts-2.4
     - EMBER_TRY_SCENARIO=ember-lts-2.8
+    # final LTS for 2.x line:
+    - EMBER_TRY_SCENARIO=ember-2.18
+    # 3.x +
     - EMBER_TRY_SCENARIO=ember-release
     - EMBER_TRY_SCENARIO=ember-beta
     - EMBER_TRY_SCENARIO=ember-canary
