@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { describe, it } from 'mocha';
 import NameObject from 'dummy/utils/name';
 
-describe('Unit::Utils::Name', function () {
+describe('Unit | Name', function () {
 
   it('should output the default name Tobias Fünke', function() {
     let obj = NameObject.create();
