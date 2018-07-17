@@ -17,7 +17,8 @@ module.exports = {
       },
       npm: {
         devDependencies: {
-          'ember-source': null
+          'ember-source': null,
+          "ember-factory-for-polyfill": "^1.3.1"
         }
       }
     },
@@ -33,7 +34,8 @@ module.exports = {
       },
       npm: {
         devDependencies: {
-          'ember-source': null
+          'ember-source': null,
+          "ember-factory-for-polyfill": "^1.3.1"
         }
       }
     },
