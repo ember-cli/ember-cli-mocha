@@ -9,6 +9,9 @@ module.exports = function(defaults) {
     eslint: {
       testGenerator: 'mocha',
     },
+    'ember-cli-babel': {
+      includePolyfill: true
+    }
   });
 
   /*
