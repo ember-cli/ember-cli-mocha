@@ -50,7 +50,7 @@
     "ember-disable-prototype-extensions": "^1.1.2",
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^5.0.1",
-    "ember-source": "~3.1.0",
+    "ember-source": "~3.4.1",
     "lerna-changelog": "^0.8.0",
     "loader.js": "^4.2.3"
   },
