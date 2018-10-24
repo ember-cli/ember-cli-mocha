@@ -4626,8 +4626,8 @@ leek@0.0.24:
     rsvp "^3.0.21"
 
 lerna-changelog@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/lerna-changelog/-/lerna-changelog-0.8.0.tgz#a525531e850f03ca25512acc535a712fce32cc86"
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/lerna-changelog/-/lerna-changelog-0.8.2.tgz#05dc24add91741a4c198a79f82a1a4ac3fbb4754"
   dependencies:
     chalk "^2.4.1"
     cli-highlight "^1.2.3"
