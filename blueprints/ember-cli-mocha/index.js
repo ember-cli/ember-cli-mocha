@@ -1,5 +1,3 @@
-var EOL = require('os').EOL;
-
 module.exports = {
   name: 'ember-cli-mocha',
 

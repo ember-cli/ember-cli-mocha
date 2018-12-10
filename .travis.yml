@@ -41,6 +41,7 @@ install:
   - yarn install --no-lockfile
 
 script:
+  - yarn lint
   - yarn ember try:one $EMBER_TRY_SCENARIO test
 
 before_deploy:
